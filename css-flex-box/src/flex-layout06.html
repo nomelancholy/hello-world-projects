@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중앙 정렬 박스</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background: red;
+      }
+      /* justify-conten 와 align-items를 이용한 1번 방법 */
+      /* .wrap {
+        display: flex;
+        height: 100%;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background: red;
+      } */
+      /* margin을 이용한 2번 방법 */
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정렬이 다른 메뉴</title>
+    <style>
+      ul,
+      li {
+        list-style: none;
+      }
+      div,
+      ul,
+      li,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .tablist {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 60px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #fff;
+      }
+      /* tablist를 container로 지정하고 
+         justify-content 속성 값을 space-between으로 적용해 자식 요소를 일정한 가격으로 정렬 */
+      .tab {
+        position: relative;
+        display: block;
+        line-height: 60px;
+        font-weight: bold;
+        padding: 0 15px;
+      }
+      .tab.selected:after {
+        position: absolute;
+        bottom: 19px;
+        left: 13px;
+        right: 13px;
+        height: 9px;
+        background: rgba(0, 209, 69, 0.7);
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="tablist">
+      <li>
+        <a href="#" class="tab selected">HOME</a>
+      </li>
+      <li>
+        <a href="#" class="tab">CHANNELS</a>
+      </li>
+      <li>
+        <a href="#" class="tab">VIDEOS</a>
+      </li>
+    </ul>
+  </body>
+</html>

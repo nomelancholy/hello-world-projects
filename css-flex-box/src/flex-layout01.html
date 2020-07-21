@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤이 없는 100% 레이아웃</title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        /* flex container에 height 100% 선언하고 flex item들 수직 정렬 */
+        .header {
+            height: 65px;
+            background-color: #00c73c;
+        }
+        /* 고정 높이 header */
+        .tablist {
+            height: 70px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+            background-color: skyblue;
+        }
+        /* 고정 높이 tablist */
+        .content {
+            background: red;
+            display: flex;
+            flex: 1; /* == flex: 1 1 0 */
+        }
+        /*  flex : flex-grow flex-shrink flex-basis (flex item의 크기와 관련된 속성) */
+        /* flex-grow : flex item의 확장에 관련된 속성. 0과 양의 정수를 속성값에 사용한다
+                       속성값이 0이면 container의 크기가 커져도 item의 크기가 커지지 않고 원래 크기로 유지된다.
+                       속성값이 1이상이면 item의 원래 크기와 상관없이 container를 채우도록 item의 크기가 커진다
+         */
+        /* flex-shrink : flex item의 축소에 관련된 속성. 0과 양의 정수를 속성값에 사용하고 기본값은 1이다  
+                         속성값이 0이면 container의 크기가 item보다 작아져도 item의 크기가 줄어들지 않고 원래 크기로 유지된다.
+                         속성값이 1이상이면 container의 크기가 item보다 작아질 때 item의 크기가 container에 맞춰 줄어든다.
+        */
+        /* flex-basis : flex item의 기본 크기를 결정하는 속성. 기본값은 auto다 
+                        flex-basis 속성의 값을 auto로 설정하면 item은 relative flex item이 되어 콘텐츠의 크기를 기준으로 크기가 결정되고
+                        flex-basis 속성의 값을 0으로 설정하면 item은 absolute flex item이 되어 container의 크기를 기준으로 크기가 결정된다.
+                        flex-basis 속성의 값을 30px, 50%같이 설정하면 명시한 크기로 item의 크기가 고정된다
+        */
+        /* flex : 1 == flex-grow: 1 flex-shrink: 1 flex-basis: 0이 되어  
+                       컨테이너 크기에 따라 item 크기가 결정되고 또 커지거나 작아진다는 의미 
+         */
+        .aside {
+            width: 400px;
+            background-color: #bfbab078;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <header class="header">
+
+        </header>
+        <div class="tablist">
+                
+        </div>
+        <div class="content">
+              <div class="aside"></div>  
+              <div class="main"></div>
+        </div>
+    </div>
+</body>
+</html>
