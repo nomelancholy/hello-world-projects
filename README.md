@@ -6,8 +6,16 @@
 
 ## client-side
 
-- [css-flex box](./css-flex-box)
-- [webpack-build practice](./webpack-build-practice)
-- [react-js-hooks](./react-js-hooks)
-- [react-js-tic-tac-toe](./react-tic-tac-toe)
-- [html-css-responsive-web](./html-css-responsive-web)
+### style
+
+- [css-flex box](./css-flex-box) : flex-box 관련한 생활코딩 강의와 naver d2 포스팅 실습 코드
+- [html-css-responsive-web](./html-css-responsive-web) : edwith 반응형 웹 강의 실습 코드
+
+### react
+
+- [react-js-hooks](./react-js-hooks) : Nomad Coder의 실전형 리액트 Hooks 강의 실습 코드
+- [react-js-tic-tac-toe](./react-tic-tac-toe) : React 공식 자습서 tic tac toe 실습 코드
+
+### webpack
+
+- [webpack-build practice](./webpack-build-practice) : webpack 기초 포스팅 실습 코드
