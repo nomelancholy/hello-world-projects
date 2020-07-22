@@ -32,7 +32,9 @@
 
 ### redux
 
-- [js-redux] : (./js-redux) : 생활코딩 redux 강의 실습 코드
+- [js-redux](./js-redux) : 생활코딩 redux 강의 실습 코드
+
+- [react-js-react-redux](./react-js-react-redux) : 생활코딩 react redux 강의 실습 코드
 
 ### js test
 
