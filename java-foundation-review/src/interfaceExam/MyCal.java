@@ -1,0 +1,17 @@
+package interfaceExam;
+
+public class MyCal implements Calculator {
+
+	@Override
+	public int plus(int i, int j) {
+		// TODO Auto-generated method stub
+		return i + j;
+	}
+
+	@Override
+	public int muliple(int i, int j) {
+		// TODO Auto-generated method stub
+		return i * j;
+	}
+
+}

@@ -4,6 +4,10 @@
 
 ## server-side
 
+### java
+
+[java-foundation-review](./java-foundation-review) : 프로그래머스 자바 입문 강의 실습 코드
+
 ## client-side
 
 ### style
