@@ -22,6 +22,7 @@
 
 ### react
 
+- [react-js-movie-app](./react-js-movie-app) : Nomad Coder의 ReactJS로 웹 서비스 만들기 강의 실습 코드
 - [react-js-hooks](./react-js-hooks) : Nomad Coder의 실전형 리액트 Hooks 강의 실습 코드
 - [react-js-tic-tac-toe](./react-tic-tac-toe) : React 공식 자습서 tic tac toe 실습 코드
 - [react-js-context-api](./react-js-context-api) : Nomad Coder의 리액트 Context API 40분 마스터하기 실습 코드
