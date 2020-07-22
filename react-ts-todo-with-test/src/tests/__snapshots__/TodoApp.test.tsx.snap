@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoApp /> matches snapshot 1`] = `
+<div>
+  <form>
+    <input
+      placeholder="할 일을 입력하세요"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      등록
+    </button>
+  </form>
+  <ul
+    data-testid="TodoList"
+  >
+    <li>
+      <span
+        class="on"
+      >
+        TDD 배우기
+      </span>
+      <button>
+        삭제
+      </button>
+    </li>
+    <li>
+      <span
+        class="on"
+      >
+        react-testing-library 사용하기
+      </span>
+      <button>
+        삭제
+      </button>
+    </li>
+  </ul>
+</div>
+`;

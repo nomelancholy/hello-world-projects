@@ -40,7 +40,7 @@
 
 - [react-js-enzyme-test](./react-js-enzyme-test) : Enzyme 을 사용한 리액트 컴포넌트 테스트 포스팅 실습 코드
 
-- [react-js-rtl-tutorial](./react-js-rtl-tutorial) :  react-testing-library 를 사용한 리액트 컴포넌트 테스트 실습 코드
+- [react-ts-todo-with-test](./react-ts-todo-with-test) :  react-testing-library 를 사용한 리액트 컴포넌트 테스트 실습 코드
 
 ### webpack
 
