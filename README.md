@@ -28,6 +28,10 @@
 - [react-js-context-api](./react-js-context-api) : Nomad Coder의 리액트 Context API 40분 마스터하기 실습 코드
 - [react-js-styled-awesomeness](./react-js-styled-awesomeness) : Nomad Coder의 react styled-components 강의 실습 코드
 
+### redux
+
+- [js-redux] : (./js-redux) : 생활코딩 redux 강의 실습 코드
+
 ### js test
 
 - [js-jest-tdd-tutorial](./js-jest-tdd-tutorial) : 자바스크립트 테스틍의 기초 포스팅 실습 코드

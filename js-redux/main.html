@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.js"></script>
+</head>
+
+<body>
+    <div id="subject"></div>
+    <div id="toc"></div>
+    <div id="control"></div>
+    <div id="content"></div>
+
+    <script>
+        function subject() {
+            document.querySelector('#subject').innerHTML = `
+            <header>
+                <h1>WEB</h1>
+                Hello, WEB!
+            </header>
+            `
+        }
+        function TOC() {
+            var state = store.getState();
+            document.querySelector('#toc').innerHTML = `
+            <nav>
+                <ol>
+                    ${state.content.map(i => (
+                `<li>
+                                <a onclick = "event.preventDefault();
+                                              var action = {type:'SELECT', id:${i.id}, mode:'read'}
+                                              store.dispatch(action);
+                                            "
+                                    href ="${i.id}.html"
+                                >
+                                    ${i.title}
+                                </a>
+                            </li>`
+            )
+            ).join('')}
+                </ol>
+            </nav>
+            `
+        }
+        function control() {
+            document.querySelector('#control').innerHTML = `
+            <ul>
+                <li>
+                    <button value="create" 
+                            onclick="
+                                var action = {type:'MODE_CHANGE', mode:'create'}
+                                store.dispatch(action)
+                            "
+                    >
+                        create
+                    </button>
+                </li>
+                <li>
+                    <button value="delete"
+                            onclick="
+                                var action = {type: 'DELETE', mode:'done'}
+                                store.dispatch(action)
+                            "
+                    >
+                        delete
+                    </button>
+                </li>
+            </ul>
+            `
+        }
+        function article() {
+            var state = store.getState();
+
+            if (state.mode === 'read') {
+                var i = 0;
+                var aTitle, aDesc;
+                while (i < state.content.length) {
+                    if (state.content[i].id === state.selected_id) {
+                        aTitle = state.content[i].title,
+                        aDesc = state.content[i].desc;
+                        break;
+                    }
+                    i = i + 1
+                }
+
+                document.querySelector('#content').innerHTML = `
+                <article>
+                    <h2>${aTitle}</h2>
+                    ${aDesc}
+                </article>
+                `
+            } else if (state.mode === 'create') {
+                document.querySelector('#content').innerHTML = `
+                <article>
+                    <form onsubmit="
+                        event.preventDefault();
+                        let _title = this.title.value;
+                        let _desc = this.desc.value;
+                        store.dispatch({
+                            type:'CREATE',
+                            title: _title,
+                            desc: _desc,
+                        });
+                    ">
+                        <p>
+                            <input type="text" name="title" placeholder="title">
+                        </p>
+                        <p>
+                            <textarea name="desc" placeholder="description"></textarea>
+                        </p>
+                        <p>
+                            <button>submit</button>
+                        </p>
+                    </form>
+                </article>
+                `
+            }else if (state.mode === 'done'){
+                console.log('done')
+                document.querySelector('#content').innerHTML = `
+                <article>
+                    <h2>삭제가 완료되었습니다.</h2>
+                </article>
+                `
+            }
+
+        }
+
+        function reducer(state, action) {
+            if (state === undefined) {
+                return {
+                    max_id: 2,
+                    mode: 'read',
+                    selected_id: 1,
+                    content: [
+                        { id: 1, title: 'HTML', desc: 'HTML is ...' },
+                        { id: 2, title: 'CSS', desc: 'CSS is ...' },
+                    ]
+                }
+            }
+            let newState;
+            if (action.type === 'SELECT') {
+                newState = Object.assign({}, state, { selected_id: action.id, mode: action.mode });
+            }
+
+            if (action.type === 'MODE_CHANGE') {
+                newState = Object.assign({}, state, { mode: action.mode });
+            }
+
+            if (action.type === 'CREATE') {
+                newContent = state.content.concat();
+                newContent.push({ id: state.max_id + 1, title: action.title, desc: action.desc })
+                newState = Object.assign({}, state, {
+                    max_id: state.max_id + 1,
+                    content: newContent,
+                    mode: 'read'
+                })
+
+            }
+
+            if (action.type === 'DELETE') {
+                var newContent = state.content.filter(item => item.id !== state.selected_id);
+                newState = Object.assign({}, state, {
+                    content: newContent,
+                    mode: action.mode
+                })
+            }
+
+            return newState;
+        };
+
+        var store = Redux.createStore(reducer);
+
+        store.subscribe(article);
+        store.subscribe(TOC);
+
+        subject();
+        TOC();
+        control();
+        article();
+    </script>
+</body>
+
+</html>
