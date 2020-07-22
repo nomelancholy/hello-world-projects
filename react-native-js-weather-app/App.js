@@ -10,7 +10,7 @@ export default function App() {
   const [isLoading, changeState] = useState(true);
 
   getWeather = async (lat, lon) => {
-    const API_KEY = '5f17675e111187f77805e6a20873b969'
+    // const API_KEY = 삭제
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     );
