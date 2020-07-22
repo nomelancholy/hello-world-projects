@@ -36,6 +36,10 @@
 
 - [react-js-react-redux](./react-js-react-redux) : 생활코딩 react redux 강의 실습 코드
 
+### mobx
+
+- [react-ts-mobx-react-lite-to-do](./react-ts-mobx-react-lite-to-do) : mobx-react 가이드 실습 코드
+
 ### js test
 
 - [js-jest-tdd-tutorial](./js-jest-tdd-tutorial) : 자바스크립트 테스틍의 기초 포스팅 실습 코드
