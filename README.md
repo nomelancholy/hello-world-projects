@@ -17,6 +17,10 @@
 - [html-css-responsive-web](./html-css-responsive-web) : edwith 반응형 웹 강의 실습 코드
 - [html-css-responsive-practice](./html-css-responsive-practice) : WEBSTORYBOY님의 반응형 사이트 만들기 강의 실습 코드
 
+### javascript
+
+- [js-es6](./js-es6) : 패스트 캠퍼스 es6 강의 실습 코드
+
 ### typescript
 
 - [typescript-blockchain](./typescript-blockchain) : Nomad Coder의 타입 스크립트로 블록체인 만들기 강의 실습 코드
