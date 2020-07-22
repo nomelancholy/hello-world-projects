@@ -11,6 +11,10 @@
 - [css-flex box](./css-flex-box) : flex-box 관련한 생활코딩 강의와 naver d2 포스팅 실습 코드
 - [html-css-responsive-web](./html-css-responsive-web) : edwith 반응형 웹 강의 실습 코드
 
+### typescript
+
+- [typescript-blockchain](./typescript-blockchain) : Nomad Coder의 타입 스크립트로 블록체인 만들기 강의 실습 코드
+
 ### react
 
 - [react-js-hooks](./react-js-hooks) : Nomad Coder의 실전형 리액트 Hooks 강의 실습 코드
