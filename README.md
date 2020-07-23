@@ -18,6 +18,8 @@
 
 - [springboot-jpa-practice](./springboot-jpa-practice) : Tacademy JPA 프로그래밍 기본기 다지기 강의 실습 코드
 
+- [springboot-info-manage](./springboot-info-manage) : 패스트 캠퍼스 spring boot 지인 정보 관리 시스템 강의 실습 코드
+
 ## client-side
 
 ### html
