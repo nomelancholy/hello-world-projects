@@ -7,6 +7,7 @@
 ### java
 
 [java-foundation-review](./java-foundation-review) : 프로그래머스 자바 입문 강의 실습 코드
+[java-oop-basic-practice](./java-oop-basic-practice) : 패스트 캠퍼스 자바 객체 지향 강의 실습 코드
 [java-tdd](./java-tdd) : TDD 실천법과 도구 책 실습 코드
 
 ## client-side
