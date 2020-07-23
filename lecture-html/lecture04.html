@@ -1,0 +1,62 @@
+<html>
+<!-- 브라우저에게 HTML 문서의 시작과 끝을 알려준다 -->
+
+<head>
+    <title>HTML 웹 프로그래밍 실습 - HTML에서 테이블 표현</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content=" HTML에서 테이블 표현">
+    <meta name="author" content="Choi jae-uk">
+</head>
+
+
+<body>
+    <table>
+    <!-- 데이터를 포함하는 셀들의 행과 열로 구성된 2차원 테이블을 정의한다 -->
+        <caption>구매 내역</caption>
+        <!-- 테이블 캡션(테이블을 설명하는 단어)을 정의한다 -->
+        <colgroup>
+            <!-- 테이블에서 서식 지정을 위해 하나 이상의 열을 그룹으로 묶기 위해 사용 -->
+            <col style="background-color: skyblue;">
+            <col span="2" style="background-color: ivory;">
+            <!-- colgroup에 속하는 각 열의 속성을 정의한다 -->
+        </colgroup>
+        <thead>
+            <!-- 테이블에서 제목 콘텐츠를 하나의 그룹으로 묶기 위해 사용 -->
+            <tr>
+                <!-- 테이블에서 셀들로 이루어진 하나의 행을 정의한다 -->
+                <th abbr="상품번호" scope="col">상품번호</th>
+                <!-- 테이블에서 제목이 되는 헤더 셀을 정의한다 -->
+                <th>품명</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 테이블에서 내용 콘텐츠를 하나의 그룹으로 묶기 위해 사용 -->
+            <tr>
+                <td >1</td>
+                <!-- 테이블에서 하나의 데이터 셀을 정의한다 -->
+                <td>콜라</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td >2</td>
+                <td>사이다</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- 테이블에서 푸터 콘텐츠를 하나의 그룹으로 묶기 위해 사용 -->
+            <tr>
+                <td colspan="2" rowspan="2">합계/평균</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td >1250</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

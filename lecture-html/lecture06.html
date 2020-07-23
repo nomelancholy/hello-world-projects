@@ -1,0 +1,65 @@
+<html>
+<!-- 브라우저에게 HTML 문서의 시작과 끝을 알려준다 -->
+
+<head>
+    <title>HTML 웹 프로그래밍 실습 - HTML에서 입력양식</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content=" HTML에서 입력양식">
+    <meta name="author" content="Choi jae-uk">
+</head>
+
+
+<body>
+
+    <form action="/file" enctype="multipart/form-data" method="POST">
+        <!-- 사용자로부터 입력을 받을 수 있는 HTML 입력 폼을 정의한다 -->
+        <fieldset>
+            <!-- form 요소에서 연관된 요소들을 하나의 그룹을 묶을 때 사용한다 -->
+            <legend>과제 제출</legend>
+            <!-- fieldset 요소의 캡션을 정의한다 -->
+            <label for="writer">
+                <!-- 주로 input 요소의 라벨을 정의한다 -->
+                작성자 : <input id="writer" type="text">
+            </label>
+            <label for="file">
+                첨부파일 <input id="file" type="file">
+                <!-- 사용자로부터 입력받을 수 있는 입력 필드를 정의함 -->
+            </label>
+            <label for="browser">
+                사용 브라우저 <input id="browser" list="browser">
+                <datalist id="browser">
+                    <!-- input 요소에서 데이터 리스트로 보여줄 목록을 미리 정의함 -->
+                    <option value="IE" disabled></option>
+                    <!-- 드롭다운 리스트에서 사용되는 하나의 옵션을 정의한다 -->
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                </datalist>
+            </label>
+            <label for="desc">사유</label>
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="추가 설명" maxlength="50"></textarea>
+            <!-- 여러 줄의 텍스트를 입력할 수 있는 텍스트 입력 영역을 정의함 -->
+        </fieldset>
+        <label for="grade">자체 평가</label>
+        <select name="grade" id="grade" multiple>
+            <!-- 옵션 메뉴를 제공하는 드룹다운 리스트를 정의한다 -->
+            <optgroup label="성적">
+                <!-- 드롭다운 리스트에서 사용되는 옵션들의 그룹을 정의한다 -->
+                <option value="A">A</option>
+                <!-- 드롭다운 리스트에서 사용되는 하나의 옵션을 정의한다 -->
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </optgroup>
+        </select>
+
+        <button type="submit">submit</button>
+        <!-- 클릭할 수 있는 버튼을 정의함 -->
+    </form>
+
+
+
+</body>
+
+</html>

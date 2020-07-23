@@ -16,6 +16,10 @@
 
 ## client-side
 
+### html
+
+- [lecture-html](./lecture-html) : 방통대 html 웹 프로그래밍 강의 실습 코드
+
 ### style
 
 - [css-flex box](./css-flex-box) : flex-box 관련한 생활코딩 강의와 naver d2 포스팅 실습 코드

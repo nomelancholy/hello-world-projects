@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문제4</title>
+  </head>
+  <body>
+    <img id="image" src="flower.jpg" height="50" width="50" /><br />
+    <span id="mySpan">높이: 50픽셀 * 폭: 50픽셀</span><br /><br />
+    <input type="button" value="이미지 크기 X 2" onClick="imageSizeX2()" />
+    <script>
+      function imageSizeX2() {
+        var image = document.getElementById("image");
+
+        // 화면에 표시된 이미지를 두 배로 확대하는 부분
+
+        var expandedHeight = image.getAttribute("height") * 2;
+        var expandedWidth = image.getAttribute("width") * 2;
+
+        image.setAttribute("height", expandedHeight);
+        image.setAttribute("width", expandedWidth);
+
+        // 확대된 이미지의 크기 정보를 <span>태그 내에 표시하는 부분
+        var span = document.getElementById("mySpan");
+        span.innerText = '높이 : '+ expandedHeight+"픽셀 * 폭: "+expandedWidth+"픽셀"
+        span.style.background = 'yellow'
+        span.style.color = 'blue'
+        span.style.fontWeight = 'bold'
+        span.style.fontSize = '15px'
+      }
+    </script>
+  </body>
+</html>

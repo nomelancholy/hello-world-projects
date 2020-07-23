@@ -1,0 +1,26 @@
+<html>
+<!-- 브라우저에게 HTML 문서의 시작과 끝을 알려준다 -->
+
+<head>
+    <title>HTML 웹 프로그래밍 실습 - HTML에서 멀티미디어 표현</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content=" HTML에서 멀티미디어 표현">
+    <meta name="author" content="Choi jae-uk">
+</head>
+
+
+<body>
+    <audio controls loop src="sample.mp3"></audio>
+    <video controls>
+        <source src="sample_video_mp4.mp4" type="video/mp4">
+        <source src="sample_video_ogg.ogg" type="video/ogg">
+        <track src="sub_kr.vtt" kind="subtitles" srclang="ko" label="Korean">
+        <track src="sub_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+    <embed src="sample.pdf" width="300" height="200">
+</body>
+
+</html>
