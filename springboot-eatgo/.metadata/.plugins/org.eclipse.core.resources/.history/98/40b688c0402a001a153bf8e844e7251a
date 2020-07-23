@@ -1,0 +1,10 @@
+# 🍛 Eat-Go Project
+
+## 🚀 개요
+
+아샬님의 '스프링 부트 프로젝트 (레스토랑 예약 사이트 만들기)' 강의 실습 코드 저장소입니다.
+
+## 🛴 진행
+
+1. Spring Boot Project 세팅
+	java8 / gradle / Spring Web / Spring devTools / lombok

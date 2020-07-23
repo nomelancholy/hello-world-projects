@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="kr.co.fastcampus.eatgo.domain.Restaurant"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+<fullyQualifiedTypeName name="org.hamcrest.number.IsCloseTo"/>
+<fullyQualifiedTypeName name="org.hamcrest.core.IsEqual"/>
+<fullyQualifiedTypeName name="org.hamcrest.core.Is"/>
+</qualifiedTypeNameHistroy>

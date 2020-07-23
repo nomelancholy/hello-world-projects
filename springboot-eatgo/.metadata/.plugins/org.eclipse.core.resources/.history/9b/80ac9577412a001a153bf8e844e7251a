@@ -1,0 +1,16 @@
+package kr.co.fastcampus.eatgo.domain;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.hamcrest.core.Is.is;
+import org.junit.jupiter.api.Test;
+
+public class RestaurantTests {
+
+	@Test
+	public void creation() {
+		Restaurant restaurant = new Restaurant();
+		assertThat(restaurant.getName(), Is("Bob Zip"));
+	}
+	
+}

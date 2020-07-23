@@ -14,6 +14,8 @@
 
 [springboot-testing-web](./springboot-testing-web) : Spring.io 의 test 가이드 실습 코드
 
+[springboot-eatgo](./springboot-eatgo) : 패스트 캡퍼스 spring boot 레스토랑 예약 시스템 강의 실습 코드
+
 ## client-side
 
 ### html
