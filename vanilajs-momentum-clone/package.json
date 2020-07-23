@@ -1,0 +1,23 @@
+{
+  "name": "js-momentum-clone",
+  "version": "1.0.0",
+  "description": "[Momentum](https://momentumdash.com/)을 클론 코딩해봤습니다.",
+  "main": "bg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomelancholy/js-momentum-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomelancholy/js-momentum-clone/issues"
+  },
+  "homepage": "https://github.com/nomelancholy/js-momentum-clone#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

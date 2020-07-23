@@ -1,0 +1,143 @@
+.form, 
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-family: 'Jua', sans-serif;
+}
+
+.js-weather {
+  font-size: 25px;
+  color: aliceblue;
+  font-family: 'Gugi', cursive;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.name-section {
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin: -30px 0 0 -200px;
+  
+}
+
+.js-form {
+  text-align: center;
+}
+
+.js-form input {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  border: 3px solid #555;
+}
+
+.greeting {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  font-size: 50px;
+  color: azure;
+}
+
+.clock-section {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -300px;
+}
+
+.clock-section h1 {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+  font-size: 130px;
+  font-family: 'Jua', sans-serif;
+  color: azure;
+}
+
+.todo-section {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 55%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.js-toDoForm {
+  text-align: center;
+}
+
+.js-toDoForm input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid gray;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+  border: 3px solid #555;
+  box-sizing: 150px;
+}
+
+.js-toDoList {
+  overflow: hidden;
+}
+
+.js-toDoList li {
+  width: 300px;
+  position: relative;
+}
+
+.js-toDoList li span {
+  text-align:  center;
+  color: white;
+  display: block;
+  width: 265px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  font-weight: bold;
+}
+
+.js-toDoList li button {
+  width: 31px;
+  height: 30px;
+  float: right;
+  text-align: center;
+  border: 2px solid #555;
+  background: white
+}
+
+.js-toDoList li button:hover{
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}

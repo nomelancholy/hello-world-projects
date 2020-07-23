@@ -1,0 +1,7 @@
+const config = {
+    WEATHER_API_KEY : '',
+    UNSPLASH_ACCESS_KEY: '',
+    UNSPLASH_SECRET_KEY : '',
+  }
+
+  export default config;

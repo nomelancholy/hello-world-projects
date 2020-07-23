@@ -36,6 +36,8 @@
 
 - [js-es6](./js-es6) : 패스트 캠퍼스 es6 강의 실습 코드
 
+- [vanilajs-momentum-clone](./vanilajs-momentum-clone) : Nomad Coder 바닐라 JS로 크롬 앱 만들기 강의 실습 코드
+
 ### typescript
 
 - [typescript-blockchain](./typescript-blockchain) : Nomad Coder의 타입 스크립트로 블록체인 만들기 강의 실습 코드
