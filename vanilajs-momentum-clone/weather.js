@@ -3,9 +3,7 @@
 const weather = document.querySelector('.js-weather');
 
 const COORDS = 'coords';
-//const API_KEY = '${{secrets.WEATHER_API_KEY}}'
-const API_KEY='5f17675e111187f77805e6a20873b969'
-//const API_KEY = config.WEATHER_API_KEY;
+const API_KEY = '${{secrets.WEATHER_API_KEY}}'
 
 function getWeather(lat, lon) {
     fetch(
