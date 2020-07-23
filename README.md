@@ -6,15 +6,17 @@
 
 ### java
 
-[java-foundation-review](./java-foundation-review) : 프로그래머스 자바 입문 강의 실습 코드
-[java-oop-basic-practice](./java-oop-basic-practice) : 패스트 캠퍼스 자바 객체 지향 강의 실습 코드
-[java-tdd](./java-tdd) : TDD 실천법과 도구 책 실습 코드
+- [java-foundation-review](./java-foundation-review) : 프로그래머스 자바 입문 강의 실습 코드
+- [java-oop-basic-practice](./java-oop-basic-practice) : 패스트 캠퍼스 자바 객체 지향 강의 실습 코드
+- [java-tdd](./java-tdd) : TDD 실천법과 도구 책 실습 코드
 
 ### spring
 
-[springboot-testing-web](./springboot-testing-web) : Spring.io 의 test 가이드 실습 코드
+- [springboot-testing-web](./springboot-testing-web) : Spring.io 의 test 가이드 실습 코드
 
-[springboot-eatgo](./springboot-eatgo) : 패스트 캡퍼스 spring boot 레스토랑 예약 시스템 강의 실습 코드
+- [springboot-eatgo](./springboot-eatgo) : 패스트 캡퍼스 spring boot 레스토랑 예약 시스템 강의 실습 코드
+
+- [springboot-jpa-practice](./springboot-jpa-practice) : Tacademy JPA 프로그래밍 기본기 다지기 강의 실습 코드
 
 ## client-side
 
