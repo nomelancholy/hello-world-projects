@@ -78,3 +78,9 @@
 #### expo
 
 - [react-native-js-weather-app](./react-native-js-weather-app) : Nomad Coder의 React Native로 날씨앱 만들기 강의 실습 코드
+
+## ETC
+
+### github action
+
+- [action-tutorials](./action-tutorials) : 이고잉님의 github action tutorial 강의 실습 코드
