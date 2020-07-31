@@ -38,6 +38,8 @@
 
 - [vanilajs-momentum-clone](./vanilajs-momentum-clone) : Nomad Coder 바닐라 JS로 크롬 앱 만들기 강의 실습 코드
 
+- [regex-js](./regex-js) : 이고잉님의 정규표현식 강의 실습 코드
+
 ### typescript
 
 - [typescript-blockchain](./typescript-blockchain) : Nomad Coder의 타입 스크립트로 블록체인 만들기 강의 실습 코드
