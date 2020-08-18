@@ -1,0 +1,19 @@
+
+C
+java-hello-test.iml,5\b\5b44f38ce720776c35a8c39bda3fade4a60d9de4
+S
+#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
+`
+0src/main/java/org/example/CalculatorService.java,7\9\79c0380d2d583e61f194aa39920bf377ec83af1b
+`
+0src/main/java/org/example/ApplicationConfig.java,3\1\3137f414ca40313f572d17e47c295905930c21a0
+d
+4src/test/java/org/example/CalculatorServiceTest.java,3\e\3e8a8eb42edd22152eca09496b0709a445f2187f
+X
+(src/main/java/org/example/MyService.java,e\b\eb1add692464e4c6635466397ccd438a24b50a1a
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+\
+,src/test/java/org/example/MyServiceTest.java,1\9\19a6512fde156cb078aae2a7de5f65225f7a897e
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
