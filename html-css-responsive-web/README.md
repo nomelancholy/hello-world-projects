@@ -1,5 +1,5 @@
 # ResponsiveWeb
- 
+
 [edwith 부스트코스 반응형 웹 강의](https://www.edwith.org/boostcourse-ui/lecture/34581/) 실습 코드입니다
 
 ### 진행 과정

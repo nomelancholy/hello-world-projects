@@ -30,6 +30,9 @@
 
 - [css-flex box](./css-flex-box) : flex-box 관련한 생활코딩 강의와 naver d2 포스팅 실습 코드
 - [html-css-responsive-web](./html-css-responsive-web) : edwith 반응형 웹 강의 실습 코드
+
+- [html-css-standard-web-practice](./html-css-standard-practice) : WEBSTORYBOY 님의 웹 표준 사이트 강의 실습 코드
+
 - [html-css-responsive-practice](./html-css-responsive-practice) : WEBSTORYBOY님의 반응형 사이트 만들기 강의 실습 코드
 
 ### javascript
@@ -69,7 +72,7 @@
 
 - [react-js-enzyme-test](./react-js-enzyme-test) : Enzyme 을 사용한 리액트 컴포넌트 테스트 포스팅 실습 코드
 
-- [react-ts-todo-with-test](./react-ts-todo-with-test) :  react-testing-library 를 사용한 리액트 컴포넌트 테스트 실습 코드
+- [react-ts-todo-with-test](./react-ts-todo-with-test) : react-testing-library 를 사용한 리액트 컴포넌트 테스트 실습 코드
 
 ### webpack
 
