@@ -1,3 +1,23 @@
+/* 스킵 내비게이션  */
+#skip {
+  position: relative;
+}
+#skip a {
+  position: absolute;
+  left: 0px;
+  top: -35px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: #333;
+  line-height: 30px;
+  width: 160px;
+  text-align: center;
+}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
 /* 레이아웃 */
 #wrap {
   width: 100%;
