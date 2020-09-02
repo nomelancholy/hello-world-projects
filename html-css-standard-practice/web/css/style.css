@@ -33,10 +33,11 @@
 }
 
 /* 컨텐츠 레이아웃 */
+#cont_nav {
+  background-color: #f6fdff;
+}
 #cont_tit {
-  width: 100%;
-  height: 200px;
-  background: #444;
+  background-color: #eaf7fd;
 }
 #cont_ban {
   width: 100%;
@@ -48,7 +49,6 @@
   height: 200px;
   background: #666;
 }
-
 /* 컨테이너 */
 .container {
   width: 990px;
@@ -166,4 +166,27 @@
 }
 .nav > div ol li a:hover {
   text-decoration: underline;
+}
+
+/* 타이틀 */
+.tit {
+  position: relative;
+}
+
+.tit h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color: #2c94c4;
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.tit .btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon.png) no-repeat 0 -600px;
 }
