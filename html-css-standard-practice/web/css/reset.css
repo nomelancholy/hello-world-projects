@@ -73,6 +73,13 @@ h6 {
   color: #222;
   font-weight: normal;
 }
+
+/* 테두리 초기화 */
+img,
+fieldset {
+  border: 0 none;
+}
+
 /* IR 효과 */
 
 .ir_pm {
