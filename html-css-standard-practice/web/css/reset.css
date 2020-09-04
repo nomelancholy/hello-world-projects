@@ -80,6 +80,11 @@ fieldset {
   border: 0 none;
 }
 
+/* 버튼 초기화 */
+button {
+  border: 0;
+}
+
 /* IR 효과 */
 
 .ir_pm {
