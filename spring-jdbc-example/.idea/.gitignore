@@ -1,0 +1,6 @@
+# Default ignored files
+/workspace.xml
+/spring-jdbc-example/src/main/java/kr/or/connect/config/DBConfig.java
+/spring-jdbc-example/target/classes/kr/or/connect/config/DBConfig.class
+/spring-jdbc-example/target/classes/kr/or/connect/config/
+/spring-jdbc-example/src/main/java/kr/or/connect/config/

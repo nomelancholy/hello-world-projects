@@ -1,12 +1,0 @@
-
-
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ùğü¿ÿÿÿÿÿ8ºíÿÀ.
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ùğü¿ÿÿÿÿÿ8ºíÿÀ.
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(û¿ôçúÿÿÿÿ8ºíÿÀ.
-
-java:S1130'"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ëøş§ûÿÿÿÿ8ºíÿÀ.
-g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ëøş§ûÿÿÿÿ8ºíÿÀ.
-J
-java:S1128"-Remove this unused import 'org.junit.Before'.(ÙşºÙ8ª×‚‚À.
-
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(û¿ôçúÿÿÿÿ8ºíÿÀ.
