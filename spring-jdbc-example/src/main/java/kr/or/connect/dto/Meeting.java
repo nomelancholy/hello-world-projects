@@ -48,4 +48,15 @@ public class Meeting {
     public void setDate(LocalDateTime date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "Meeting{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", resultLink='" + resultLink + '\'' +
+                ", videoLink='" + videoLink + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }

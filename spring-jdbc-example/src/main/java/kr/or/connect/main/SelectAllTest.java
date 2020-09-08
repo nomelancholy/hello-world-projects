@@ -21,7 +21,7 @@ public class SelectAllTest {
         List<Meeting> list = meetingsDao.selectAll();
 
         for (Meeting meeting: list) {
-            System.out.println(meeting.getTitle());
+            System.out.println(meeting);
         }
 
     }
