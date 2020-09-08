@@ -24,10 +24,16 @@ public class JDBCTest {
 //
 //        int count = meetingsDao.insert(meeting);
 
-        meeting.setId(2);
-        meeting.setVideoLink("www.videoLink.com");
+//        meeting.setId(2);
+//        meeting.setVideoLink("www.videoLink.com");
+//
+//        int count = meetingsDao.update(meeting);
+//        System.out.println(count);
 
-        int count = meetingsDao.update(meeting);
+//        Meeting test =  meetingsDao.selectById(1);
+//        System.out.println(test);
+
+        int count = meetingsDao.delete(2);
         System.out.println(count);
 
     }
