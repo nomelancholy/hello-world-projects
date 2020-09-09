@@ -24,7 +24,7 @@
 
 ### html
 
-- [lecture-html](./lecture-html) : 방통대 html 웹 프로그래밍 강의 실습 코드
+- [univ-lecture-html](./univ-lecture-html) : 방통대 html 웹 프로그래밍 강의 실습 코드
 
 ### style
 
