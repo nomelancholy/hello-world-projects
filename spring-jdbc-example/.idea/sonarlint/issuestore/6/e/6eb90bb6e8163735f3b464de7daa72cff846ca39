@@ -1,11 +1,7 @@
 
-X
-java:S1854";Remove this useless assignment to local variable "meeting".(óÓ8‘å×åÆ.
-Z	java:S106%"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ8´ŠÜåÆ.
-X	java:S125"<This block of commented-out lines of code should be removed.(—âí8¥ğåÆ.
-I
-java:S1481",Remove this unused "meeting" local variable.(óÓ8‘å×åÆ.
-X	java:S125"<This block of commented-out lines of code should be removed.(—âí8‘å×åÆ.
-X	java:S125"<This block of commented-out lines of code should be removed.(¶üæ8‘å×åÆ.
-X	java:S125"<This block of commented-out lines of code should be removed.(ÅØğ‹8¥ğåÆ.
 ]	java:S125!"<This block of commented-out lines of code should be removed.(¾³¾«ÿÿÿÿÿ8È¦ÜåÆ.
+X	java:S125"<This block of commented-out lines of code should be removed.(ÅØğ‹8¥ğåÆ.
+X	java:S125"<This block of commented-out lines of code should be removed.(—âí8‘å×åÆ.
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ8´ŠÜåÆ.
+X	java:S125"<This block of commented-out lines of code should be removed.(¶üæ8‘å×åÆ.
+]	java:S125"<This block of commented-out lines of code should be removed.(´üİùÿÿÿÿ8Â£ê‹Ç.

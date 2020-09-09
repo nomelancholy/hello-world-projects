@@ -4,3 +4,6 @@
 /spring-jdbc-example/target/classes/kr/or/connect/config/DBConfig.class
 /spring-jdbc-example/target/classes/kr/or/connect/config/
 /spring-jdbc-example/src/main/java/kr/or/connect/config/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

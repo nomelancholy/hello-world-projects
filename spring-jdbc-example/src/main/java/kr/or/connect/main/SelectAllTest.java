@@ -7,8 +7,6 @@ import kr.or.connect.dto.Meeting;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import javax.sql.DataSource;
-import java.sql.Connection;
 import java.util.List;
 
 public class SelectAllTest {
@@ -20,7 +18,7 @@ public class SelectAllTest {
 
         List<Meeting> list = meetingsDao.selectAll();
 
-        for (Meeting meeting: list) {
+        for (Meeting meeting : list) {
             System.out.println(meeting);
         }
 

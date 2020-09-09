@@ -14,7 +14,7 @@ public class JDBCTest {
 
         MeetingsDao meetingsDao = ac.getBean(MeetingsDao.class);
 
-        Meeting meeting = new Meeting();
+//        Meeting meeting = new Meeting();
 //        meeting.setId(2);
 //        meeting.setTitle("두번째 회의");
 //        meeting.setVideoLink("www.test2.com");

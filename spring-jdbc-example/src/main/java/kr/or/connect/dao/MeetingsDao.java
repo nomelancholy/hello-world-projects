@@ -32,27 +32,27 @@ public class MeetingsDao {
         return jdbc.query(SELECT_ALL, Collections.emptyMap(), rowMapper);
     }
 
-    public Meeting selectById(Integer id){
+    public Meeting selectById(Integer id) {
         try {
             Map<String, ?> params = Collections.singletonMap("id", id);
             return jdbc.queryForObject(SELECT_BY_ID, params, rowMapper);
-        }catch (EmptyResultDataAccessException e) {
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
     }
 
-    public int insert(Meeting meeting){
+    public int insert(Meeting meeting) {
         SqlParameterSource params = new BeanPropertySqlParameterSource(meeting);
         return insertAction.execute(params);
     }
 
-    public int update(Meeting meeting){
+    public int update(Meeting meeting) {
         SqlParameterSource params = new BeanPropertySqlParameterSource(meeting);
         return jdbc.update(UPDATE, params);
     }
 
-    public int delete(Integer id){
-         Map<String, ?> params = Collections.singletonMap("id",id);
+    public int delete(Integer id) {
+        Map<String, ?> params = Collections.singletonMap("id", id);
         return jdbc.update(DELETE_BY_ID, params);
     }
 
