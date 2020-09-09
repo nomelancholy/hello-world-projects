@@ -133,9 +133,9 @@ React 개발에 도움을 주는 인포들을 알려준다.
 
 #### 함수
 
-프로그래밍 언어는 서양에서 발명되었다. 그래서 불변의 공리를 하나 세워놓고 그 원칙에 맞춰 내용들을 쌓아나가는 합리주의적인 경향이 있다.
+프로그래밍 언어는 서양에서 발명되었다. 그래서 서양에서 주로 공유되는 합리주의적인 방식, 그러니까 불변의 공리 하나를 정하고 그 원칙에 맞춰 내용을 쌓아나가는 방식을 프로그래밍 언어는 ㄱ
 
-- 기본 원칙
+자바스크립트에서 공유되는 원칙은 다음과 같다
 
 1. 값은 변수에 넣을 수 있다.
 2. javscript에선 함수도 값으로 본다. 거의 모든 것이 값이다.
@@ -493,4 +493,65 @@ function increment() {
 store.getState();
 // store.person = {}
 // 위와 같이 컴포넌트가 직접적으로 데이터를 바꾸는 위와 같은 일은 할 수 없게 해야한다. 다른 컴포넌트에서 값이 바뀌었다는 걸 알 수 없기 때문
+```
+
+## 3일차
+
+### react
+
+브라우저는 태그를 화면에 그려주는 역할을 한다. 그러나 태그는 따지자면 그냥 문자열이다. 이를 바로 브라우저에 그리는 건 힘든 일이기 때문에 브라우저는 태그를 DOM Tree로 만들고 이를 가지고 브라우저에 입력한 내용을 그린다. React의 Virtual DOM도 이와 비슷한 컨셉이다. 은 Real DOM을
+
+```js
+// App.js
+
+/* @jsx createElement */
+import { createElement, render } from "./tiny-react";
+
+function Hello(props) {
+  return <li className="item">{props.label}</li>;
+}
+
+function App() {
+  return (
+    <div>
+      <h1>hello world</h1>
+      <ul className="board" onClick={() => null}>
+        <Hello label="Hello" />
+        <Hello label="World" />
+        <Hello label="React" />
+      </ul>
+    </div>
+  );
+}
+
+render(<App />, document.getElementById("root"));
+
+// tiny-react.js
+
+function renderElement(node) {
+  if (typeof node === "string") {
+    return document.createTextNode(node);
+  }
+
+  if (node === undefined) return;
+
+  const $el = document.createElement(node.type);
+
+  node.children.map(renderElement).forEach((node) => {
+    $el.appendChild(node);
+  });
+
+  return $el;
+}
+
+export function render(vdom, container) {
+  container.appendChild(renderElement(vdom));
+}
+
+export function createElement(type, props, ...children) {
+  if (typeof type === "function") {
+    return type.apply(null, [props, ...children]);
+  }
+  return { type, props, children };
+}
 ```
