@@ -24,6 +24,10 @@
 
 - [springboot-info-manage](./springboot-info-manage) : 패스트 캠퍼스 spring boot 지인 정보 관리 시스템 강의 실습 코드
 
+- [spring-jdbc-example](./spring-jdbc-example) : edwith 부스트코스 웹 백엔드 - spring jdbc 강의 실습 코드
+
+- [spring-mvc-example](./spring-mvc-example) : edwith 부스트코스 웹 백엔드 - spring mvc 강의 실습 코드
+
 ## client-side
 
 ### html
