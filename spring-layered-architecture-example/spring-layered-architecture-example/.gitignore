@@ -1,4 +1,4 @@
 # Default ignored files
 /.idea/workspace.xml
-/src/main/java/kr/or/connect/guestbook/config/
-/target/classes/kr/or/connect/guestbook/config/
+/src/main/java/kr/or/connect/guestbook/config/*
+/target/classes/kr/or/connect/guestbook/config/*
