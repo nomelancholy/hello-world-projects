@@ -1,6 +1,9 @@
 
 spring-jdbc-example/src/main/java/kr/or/connect/config/*
-spring-layered-architecture-example/src/main/java/kr/or/connect/guestbook/config/*
-
 spring-jdbc-example/target/classes/kr/or/connect/config/*
-spring-layered-architecture-example/target/classes/kr/or/connect/guestbook/config/*
+
+spring-layered-architecture-example/spring-layered-architecture-example/src/main/java/kr/or/connect/guestbook/config/*
+
+spring-layered-architecture-example/spring-layered-architecture-example/target/classes/kr/or/connect/guestbook/config/*
+spring-layered-architecture-example/spring-layered-architecture-example/target/spring-layered-architecture-example/WEB-INF/lib/*
+spring-layered-architecture-example/spring-layered-architecture-example/target/spring-layered-architecture-example/WEB-INF/classes/kr/or/connect/guestbook/config/*
