@@ -1,7 +1,7 @@
 
-e
-java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(üñ£à8ﬁÌπ¥«.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(ÿº¢É8ﬁŒƒ¥«.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ù”•—8ú®≈¥«.
 g
 java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(´´ü÷8¨Åª¥«.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ù”•—8ú®≈¥«.
+e
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(üñ£à8ﬁÌπ¥«.
