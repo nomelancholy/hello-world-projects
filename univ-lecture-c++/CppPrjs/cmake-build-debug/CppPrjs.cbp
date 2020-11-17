@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/FirstStep/First.cpp">
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Counter/Counter.cpp">
+			<Option target="CppPrjs"/>
+		</Unit>
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Counter/Counter.h">
 			<Option target="CppPrjs"/>
 		</Unit>
 		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/CMakeLists.txt">

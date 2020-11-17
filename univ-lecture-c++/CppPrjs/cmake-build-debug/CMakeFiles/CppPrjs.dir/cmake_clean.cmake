@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CppPrjs.dir/FirstStep/First.obj"
+  "CMakeFiles/CppPrjs.dir/Counter/Counter.obj"
   "CppPrjs.exe"
   "CppPrjs.exe.manifest"
   "CppPrjs.pdb"

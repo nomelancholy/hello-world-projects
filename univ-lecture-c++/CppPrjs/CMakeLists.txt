@@ -2,9 +2,10 @@
 project(CppPrjs)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "-fexec-charset=CP949")
 
 include_directories(.)
 
 add_executable(CppPrjs
-        FirstStep/First.cpp
+        Counter/Counter.cpp
         )

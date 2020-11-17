@@ -143,19 +143,19 @@ CppPrjs/fast:
 .PHONY : CppPrjs/fast
 
 # target to build an object file
-FirstStep/First.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/FirstStep/First.obj
-.PHONY : FirstStep/First.obj
+Counter/Counter.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Counter/Counter.obj
+.PHONY : Counter/Counter.obj
 
 # target to preprocess a source file
-FirstStep/First.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/FirstStep/First.i
-.PHONY : FirstStep/First.i
+Counter/Counter.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Counter/Counter.i
+.PHONY : Counter/Counter.i
 
 # target to generate assembly for a file
-FirstStep/First.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/FirstStep/First.s
-.PHONY : FirstStep/First.s
+Counter/Counter.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Counter/Counter.s
+.PHONY : Counter/Counter.s
 
 # Help Target
 help:
@@ -166,9 +166,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CppPrjs
-	@echo ... FirstStep/First.obj
-	@echo ... FirstStep/First.i
-	@echo ... FirstStep/First.s
+	@echo ... Counter/Counter.obj
+	@echo ... Counter/Counter.i
+	@echo ... Counter/Counter.s
 .PHONY : help
 
 
