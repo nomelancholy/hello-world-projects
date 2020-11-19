@@ -7,5 +7,5 @@ set(CMAKE_CXX_FLAGS "-fexec-charset=CP949")
 include_directories(.)
 
 add_executable(CppPrjs
-        Counter/Counter.cpp
+        Polygon/Polygon.cpp
         )

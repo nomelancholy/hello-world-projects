@@ -76,28 +76,28 @@ include CMakeFiles/CppPrjs.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CppPrjs.dir/flags.make
 
-CMakeFiles/CppPrjs.dir/Counter/Counter.obj: CMakeFiles/CppPrjs.dir/flags.make
-CMakeFiles/CppPrjs.dir/Counter/Counter.obj: CMakeFiles/CppPrjs.dir/includes_CXX.rsp
-CMakeFiles/CppPrjs.dir/Counter/Counter.obj: ../Counter/Counter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppPrjs.dir/Counter/Counter.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CppPrjs.dir\Counter\Counter.obj -c C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Counter\Counter.cpp
+CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: CMakeFiles/CppPrjs.dir/flags.make
+CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: CMakeFiles/CppPrjs.dir/includes_CXX.rsp
+CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: ../Polygon/Polygon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CppPrjs.dir\Polygon\Polygon.obj -c C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp
 
-CMakeFiles/CppPrjs.dir/Counter/Counter.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppPrjs.dir/Counter/Counter.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Counter\Counter.cpp > CMakeFiles\CppPrjs.dir\Counter\Counter.i
+CMakeFiles/CppPrjs.dir/Polygon/Polygon.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppPrjs.dir/Polygon/Polygon.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp > CMakeFiles\CppPrjs.dir\Polygon\Polygon.i
 
-CMakeFiles/CppPrjs.dir/Counter/Counter.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppPrjs.dir/Counter/Counter.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Counter\Counter.cpp -o CMakeFiles\CppPrjs.dir\Counter\Counter.s
+CMakeFiles/CppPrjs.dir/Polygon/Polygon.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppPrjs.dir/Polygon/Polygon.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp -o CMakeFiles\CppPrjs.dir\Polygon\Polygon.s
 
 # Object files for target CppPrjs
 CppPrjs_OBJECTS = \
-"CMakeFiles/CppPrjs.dir/Counter/Counter.obj"
+"CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj"
 
 # External object files for target CppPrjs
 CppPrjs_EXTERNAL_OBJECTS =
 
-CppPrjs.exe: CMakeFiles/CppPrjs.dir/Counter/Counter.obj
+CppPrjs.exe: CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/build.make
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/linklibs.rsp
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/objects1.rsp

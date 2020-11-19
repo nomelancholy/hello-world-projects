@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Counter/Counter.cpp
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
+
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.cpp
 iostream
 -
-Counter.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Counter/Counter.h
+C2DStruct.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
+Polygon.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.h
 
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Counter/Counter.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.h
+iostream
+-
+cstring
+-
+math.h
+-
+C2DStruct.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
 
