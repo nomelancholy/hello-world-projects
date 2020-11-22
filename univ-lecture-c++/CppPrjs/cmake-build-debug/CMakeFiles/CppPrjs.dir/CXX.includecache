@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
-
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.cpp
-iostream
--
-C2DStruct.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
-Polygon.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.h
-
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.cpp
 iostream
 -
 cstring
 -
-math.h
--
-C2DStruct.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/C2DStruct.h
+Person.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.h
+
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.h
 

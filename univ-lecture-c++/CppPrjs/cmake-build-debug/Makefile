@@ -143,19 +143,34 @@ CppPrjs/fast:
 .PHONY : CppPrjs/fast
 
 # target to build an object file
-Polygon/Polygon.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj
-.PHONY : Polygon/Polygon.obj
+Person/Person.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.obj
+.PHONY : Person/Person.obj
 
 # target to preprocess a source file
-Polygon/Polygon.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Polygon/Polygon.i
-.PHONY : Polygon/Polygon.i
+Person/Person.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.i
+.PHONY : Person/Person.i
 
 # target to generate assembly for a file
-Polygon/Polygon.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Polygon/Polygon.s
-.PHONY : Polygon/Polygon.s
+Person/Person.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.s
+.PHONY : Person/Person.s
+
+# target to build an object file
+Person/PersonMain.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.obj
+.PHONY : Person/PersonMain.obj
+
+# target to preprocess a source file
+Person/PersonMain.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.i
+.PHONY : Person/PersonMain.i
+
+# target to generate assembly for a file
+Person/PersonMain.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.s
+.PHONY : Person/PersonMain.s
 
 # Help Target
 help:
@@ -166,9 +181,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CppPrjs
-	@echo ... Polygon/Polygon.obj
-	@echo ... Polygon/Polygon.i
-	@echo ... Polygon/Polygon.s
+	@echo ... Person/Person.obj
+	@echo ... Person/Person.i
+	@echo ... Person/Person.s
+	@echo ... Person/PersonMain.obj
+	@echo ... Person/PersonMain.i
+	@echo ... Person/PersonMain.s
 .PHONY : help
 
 

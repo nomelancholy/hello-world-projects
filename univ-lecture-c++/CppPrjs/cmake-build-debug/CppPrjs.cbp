@@ -82,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.cpp">
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.cpp">
 			<Option target="CppPrjs"/>
 		</Unit>
-		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Polygon/Polygon.h">
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.h">
+			<Option target="CppPrjs"/>
+		</Unit>
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/PersonMain.cpp">
 			<Option target="CppPrjs"/>
 		</Unit>
 		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/CMakeLists.txt">

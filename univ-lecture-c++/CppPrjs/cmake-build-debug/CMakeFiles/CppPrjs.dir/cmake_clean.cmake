@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj"
+  "CMakeFiles/CppPrjs.dir/Person/Person.obj"
+  "CMakeFiles/CppPrjs.dir/Person/PersonMain.obj"
   "CppPrjs.exe"
   "CppPrjs.exe.manifest"
   "CppPrjs.pdb"

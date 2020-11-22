@@ -18,11 +18,13 @@ class Polygon {
         C2D *c2dArray;
 
     Polygon(int n, C2D* coordinateValues = nullptr): vertexNumber(n) {
+        cout << "기본생성자" << endl;
         c2dArray = new C2D[n];
         if(coordinateValues)memcpy(c2dArray, coordinateValues, sizeof(C2D) * n) ;
     }
 
     Polygon(const Polygon& pv): vertexNumber(pv.vertexNumber){
+        cout << "복사생성자" << endl;
         c2dArray = new C2D[vertexNumber];
         memcpy(c2dArray, pv.c2dArray, sizeof(C2D) * vertexNumber);
     }

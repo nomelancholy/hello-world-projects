@@ -76,33 +76,49 @@ include CMakeFiles/CppPrjs.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CppPrjs.dir/flags.make
 
-CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: CMakeFiles/CppPrjs.dir/flags.make
-CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: CMakeFiles/CppPrjs.dir/includes_CXX.rsp
-CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj: ../Polygon/Polygon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CppPrjs.dir\Polygon\Polygon.obj -c C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp
+CMakeFiles/CppPrjs.dir/Person/Person.obj: CMakeFiles/CppPrjs.dir/flags.make
+CMakeFiles/CppPrjs.dir/Person/Person.obj: CMakeFiles/CppPrjs.dir/includes_CXX.rsp
+CMakeFiles/CppPrjs.dir/Person/Person.obj: ../Person/Person.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppPrjs.dir/Person/Person.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CppPrjs.dir\Person\Person.obj -c C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\Person.cpp
 
-CMakeFiles/CppPrjs.dir/Polygon/Polygon.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppPrjs.dir/Polygon/Polygon.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp > CMakeFiles\CppPrjs.dir\Polygon\Polygon.i
+CMakeFiles/CppPrjs.dir/Person/Person.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppPrjs.dir/Person/Person.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\Person.cpp > CMakeFiles\CppPrjs.dir\Person\Person.i
 
-CMakeFiles/CppPrjs.dir/Polygon/Polygon.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppPrjs.dir/Polygon/Polygon.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Polygon\Polygon.cpp -o CMakeFiles\CppPrjs.dir\Polygon\Polygon.s
+CMakeFiles/CppPrjs.dir/Person/Person.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppPrjs.dir/Person/Person.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\Person.cpp -o CMakeFiles\CppPrjs.dir\Person\Person.s
+
+CMakeFiles/CppPrjs.dir/Person/PersonMain.obj: CMakeFiles/CppPrjs.dir/flags.make
+CMakeFiles/CppPrjs.dir/Person/PersonMain.obj: CMakeFiles/CppPrjs.dir/includes_CXX.rsp
+CMakeFiles/CppPrjs.dir/Person/PersonMain.obj: ../Person/PersonMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CppPrjs.dir/Person/PersonMain.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CppPrjs.dir\Person\PersonMain.obj -c C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\PersonMain.cpp
+
+CMakeFiles/CppPrjs.dir/Person/PersonMain.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppPrjs.dir/Person/PersonMain.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\PersonMain.cpp > CMakeFiles\CppPrjs.dir\Person\PersonMain.i
+
+CMakeFiles/CppPrjs.dir/Person/PersonMain.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppPrjs.dir/Person/PersonMain.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\Person\PersonMain.cpp -o CMakeFiles\CppPrjs.dir\Person\PersonMain.s
 
 # Object files for target CppPrjs
 CppPrjs_OBJECTS = \
-"CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj"
+"CMakeFiles/CppPrjs.dir/Person/Person.obj" \
+"CMakeFiles/CppPrjs.dir/Person/PersonMain.obj"
 
 # External object files for target CppPrjs
 CppPrjs_EXTERNAL_OBJECTS =
 
-CppPrjs.exe: CMakeFiles/CppPrjs.dir/Polygon/Polygon.obj
+CppPrjs.exe: CMakeFiles/CppPrjs.dir/Person/Person.obj
+CppPrjs.exe: CMakeFiles/CppPrjs.dir/Person/PersonMain.obj
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/build.make
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/linklibs.rsp
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/objects1.rsp
 CppPrjs.exe: CMakeFiles/CppPrjs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CppPrjs.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CppPrjs.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CppPrjs.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
