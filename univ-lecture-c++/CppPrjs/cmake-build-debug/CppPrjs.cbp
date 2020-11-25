@@ -82,7 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex.h">
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex2.cpp">
+			<Option target="CppPrjs"/>
+		</Unit>
+		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex2.h">
 			<Option target="CppPrjs"/>
 		</Unit>
 		<Unit filename="C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Vector3.cpp">

@@ -143,6 +143,21 @@ CppPrjs/fast:
 .PHONY : CppPrjs/fast
 
 # target to build an object file
+Vector3/Complex2.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Complex2.obj
+.PHONY : Vector3/Complex2.obj
+
+# target to preprocess a source file
+Vector3/Complex2.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Complex2.i
+.PHONY : Vector3/Complex2.i
+
+# target to generate assembly for a file
+Vector3/Complex2.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Complex2.s
+.PHONY : Vector3/Complex2.s
+
+# target to build an object file
 Vector3/Vector3.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Vector3.obj
 .PHONY : Vector3/Vector3.obj
@@ -166,6 +181,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CppPrjs
+	@echo ... Vector3/Complex2.obj
+	@echo ... Vector3/Complex2.i
+	@echo ... Vector3/Complex2.s
 	@echo ... Vector3/Vector3.obj
 	@echo ... Vector3/Vector3.i
 	@echo ... Vector3/Vector3.s

@@ -8,5 +8,6 @@ include_directories(.)
 
 add_executable(CppPrjs
             Vector3/Vector3.cpp
-            Vector3/Complex.h
+            Vector3/Complex2.cpp
+            Vector3/Complex2.h
         )

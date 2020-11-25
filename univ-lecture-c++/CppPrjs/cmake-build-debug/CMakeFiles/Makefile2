@@ -93,12 +93,12 @@ clean: CMakeFiles/CppPrjs.dir/clean
 CMakeFiles/CppPrjs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target CppPrjs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target CppPrjs"
 .PHONY : CMakeFiles/CppPrjs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CppPrjs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CppPrjs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\workspace\hello-world-projects\univ-lecture-c++\CppPrjs\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/CppPrjs.dir/rule

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex2.h
 ostream
 -
 
@@ -21,6 +21,6 @@ ctime
 -
 algorithm
 -
-Complex.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex.h
+Complex2.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex2.h
 

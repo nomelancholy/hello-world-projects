@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CppPrjs.dir/Vector3/Complex2.obj"
   "CMakeFiles/CppPrjs.dir/Vector3/Vector3.obj"
   "CppPrjs.exe"
   "CppPrjs.exe.manifest"
