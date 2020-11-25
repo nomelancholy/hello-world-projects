@@ -6,13 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.cpp
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex.h
+ostream
+-
+
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Vector3.cpp
 iostream
 -
-cstring
+vector
 -
-Person.h
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.h
-
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.h
+cstdlib
+-
+ctime
+-
+algorithm
+-
+Complex.h
+C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Complex.h
 

@@ -7,7 +7,6 @@ set(CMAKE_CXX_FLAGS "-fexec-charset=CP949")
 include_directories(.)
 
 add_executable(CppPrjs
-        Person/Person.h
-        Person/Person.cpp
-        Person/PersonMain.cpp
+            Vector3/Vector3.cpp
+            Vector3/Complex.h
         )

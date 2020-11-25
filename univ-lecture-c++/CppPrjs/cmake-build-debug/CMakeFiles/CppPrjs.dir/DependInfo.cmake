@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/Person.cpp" "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/CppPrjs.dir/Person/Person.obj"
-  "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Person/PersonMain.cpp" "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/CppPrjs.dir/Person/PersonMain.obj"
+  "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/Vector3/Vector3.cpp" "C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/CppPrjs.dir/Vector3/Vector3.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

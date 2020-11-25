@@ -143,34 +143,19 @@ CppPrjs/fast:
 .PHONY : CppPrjs/fast
 
 # target to build an object file
-Person/Person.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.obj
-.PHONY : Person/Person.obj
+Vector3/Vector3.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Vector3.obj
+.PHONY : Vector3/Vector3.obj
 
 # target to preprocess a source file
-Person/Person.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.i
-.PHONY : Person/Person.i
+Vector3/Vector3.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Vector3.i
+.PHONY : Vector3/Vector3.i
 
 # target to generate assembly for a file
-Person/Person.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/Person.s
-.PHONY : Person/Person.s
-
-# target to build an object file
-Person/PersonMain.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.obj
-.PHONY : Person/PersonMain.obj
-
-# target to preprocess a source file
-Person/PersonMain.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.i
-.PHONY : Person/PersonMain.i
-
-# target to generate assembly for a file
-Person/PersonMain.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Person/PersonMain.s
-.PHONY : Person/PersonMain.s
+Vector3/Vector3.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppPrjs.dir\build.make CMakeFiles/CppPrjs.dir/Vector3/Vector3.s
+.PHONY : Vector3/Vector3.s
 
 # Help Target
 help:
@@ -181,12 +166,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CppPrjs
-	@echo ... Person/Person.obj
-	@echo ... Person/Person.i
-	@echo ... Person/Person.s
-	@echo ... Person/PersonMain.obj
-	@echo ... Person/PersonMain.i
-	@echo ... Person/PersonMain.s
+	@echo ... Vector3/Vector3.obj
+	@echo ... Vector3/Vector3.i
+	@echo ... Vector3/Vector3.s
 .PHONY : help
 
 
