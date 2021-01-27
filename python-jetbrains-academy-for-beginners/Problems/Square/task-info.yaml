@@ -4,17 +4,8 @@ files:
   visible: true
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6715#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed. You answer was:
-    ****
-    *  *
-    *  *
-    ****. Correct answer was:
-    * * * *
-    *     *
-    *     *
-    * * * *
-  time: Tue, 26 Jan 2021 13:08:47 UTC
+  message: <html>Correct solution</html>
+  time: Tue, 26 Jan 2021 13:09:48 UTC
 record: -1
