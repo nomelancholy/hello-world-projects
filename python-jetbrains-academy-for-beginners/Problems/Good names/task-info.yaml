@@ -2,11 +2,11 @@ type: code
 files:
 - name: main.py
   visible: true
-  text: n = int(input())
+  text: '# copy the correct variables here'
   learner_created: false
-feedback_link: https://hyperskill.org/learn/step/6886#comment
+feedback_link: https://hyperskill.org/learn/step/6876#comment
 status: Solved
 feedback:
   message: <html>Correct solution</html>
-  time: Sun, 31 Jan 2021 11:25:40 UTC
+  time: Sun, 31 Jan 2021 11:42:26 UTC
 record: -1

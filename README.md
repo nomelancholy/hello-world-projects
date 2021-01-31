@@ -1,6 +1,6 @@
 # hello-world-projects
 
-입문을 위한 hello world project부터 강의나 자습서, 블로그 컨텐츠를 보고 따라한 코드들을 모아놓은 repository 입니다.
+입문을 위한 hello world project부터 강의나 자습서, 블로그 컨텐츠를 보고 따라한 코드들을 모아놓은 저장소입니다.
 
 ## server-side
 
@@ -11,6 +11,10 @@
 ### c++
 
 - [univ-lecture-c++](./univ-lecture-c++) : 방통대 c++ 프로그래밍 강의 실습 코드
+
+### python
+
+- [python-jetbrains-academy-for-beginners](./python-jetbrains-academy-for-beginners) : Jet Brains Academy에서 python for beginners plan 실습 코드
 
 ### java
 
