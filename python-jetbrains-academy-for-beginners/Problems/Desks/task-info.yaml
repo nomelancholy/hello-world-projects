@@ -1,0 +1,25 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: '# put your python code here'
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6462#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 10. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    20
+    21
+    22
+    Correct output:
+    32
+
+    Your code output:
+    32.5
+  time: Sun, 31 Jan 2021 13:47:51 UTC
+record: -1
