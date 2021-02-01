@@ -18,5 +18,10 @@ print("Your age is " + str(age) + "; that's a good time to start programming!")
 print('Now I will prove to you that I can count to any number you want.')
 
 # read a number and count to it here
+n = int(input())
+i = 0
+while i <= n:
+    print(str(i)+"!")
+    i += 1
 
 print('Completed, have a nice day!')
