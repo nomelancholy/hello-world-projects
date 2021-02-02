@@ -8,9 +8,5 @@ files:
         pass
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5908#comment
-status: Unchecked
-feedback:
-  message: "Failed to connect to server, check the Internet connection \n\nFailed\
-    \ to connect to hyperskill.org/13.95.11.223:443"
-  time: Tue, 02 Feb 2021 06:37:49 UTC
+status: Solved
 record: -1
