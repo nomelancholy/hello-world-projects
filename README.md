@@ -14,7 +14,8 @@
 
 ### python
 
-- [python-jetbrains-academy-for-beginners](./python-jetbrains-academy-for-beginners) : Jet Brains Academy에서 python for beginners plan 실습 코드
+- [python-jetbrains-academy-for-beginners](./python-jetbrains-academy-for-beginners) : JetBrains Acdemy - Python for beginner plan - Simple Chatty Bot Project
+- [Tic-Tac-Toe](./Tic-Tace-Toe) : JetBrains Acdemy - Python for beginner plan - Tic-Tac-Toe Project
 
 ### java
 
