@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/239550/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Wed, 03 Feb 2021 06:28:55 UTC
+update_date: Thu, 04 Feb 2021 02:18:21 UTC
 stages:
 - id: 399
   step: 6503
@@ -44,12 +44,14 @@ topics:
   - title: Variables
     theory_id: 5859
   2:
-  - title: IDE
-    theory_id: 10996
   - title: Avoiding bad comments
     theory_id: 6440
   - title: Naming variables
     theory_id: 5885
+  - title: IDE
+    theory_id: 10996
+  - title: PyCharm basics
+    theory_id: 6193
   - title: Program with numbers
     theory_id: 5872
   - title: If statement
@@ -64,8 +66,6 @@ topics:
     theory_id: 6315
   - title: Nested lists
     theory_id: 6938
-  - title: PyCharm basics
-    theory_id: 6193
   - title: Integer arithmetic
     theory_id: 5865
   - title: Boolean logic
@@ -92,11 +92,11 @@ topics:
   4:
   - title: Program execution
     theory_id: 6047
+  - title: Errors
+    theory_id: 6052
   - title: While loop
     theory_id: 5940
   - title: Loop control statements
     theory_id: 6302
-  - title: Errors
-    theory_id: 6052
   - title: Any and all
     theory_id: 7800
