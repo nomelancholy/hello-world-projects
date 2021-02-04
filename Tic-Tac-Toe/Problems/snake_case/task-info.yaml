@@ -1,0 +1,23 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9476#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #2 of 8. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    parselTongue
+    Correct output:
+    parsel_tongue
+
+    Your code output:
+    T
+    parsel_tongue
+  time: Thu, 04 Feb 2021 07:03:35 UTC
+record: -1
