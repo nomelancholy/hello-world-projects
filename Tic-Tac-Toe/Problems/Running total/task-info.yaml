@@ -1,0 +1,26 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9504#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 3. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    15325
+    Correct output:
+    [1, 6, 9, 11, 16]
+
+    Your code output:
+    5
+    5
+    5
+    5
+    5
+  time: Sat, 06 Feb 2021 14:39:05 UTC
+record: -1
