@@ -1,0 +1,15 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    # don't modify the variable below, please
+    alphabet = input()
+    # put your python code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6719#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 10 Feb 2021 09:11:26 UTC
+record: -1
