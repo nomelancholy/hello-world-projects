@@ -4,9 +4,8 @@ files:
   visible: true
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6544#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed test #2 of 16. Wrong answer
-  time: Fri, 12 Feb 2021 06:00:51 UTC
+  message: <html>Correct solution</html>
+  time: Fri, 12 Feb 2021 06:02:41 UTC
 record: -1
