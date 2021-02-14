@@ -2,11 +2,11 @@ type: code
 files:
 - name: main.py
   visible: true
-  text: '# put your python code here'
+  text: '# the variable M is already defined'
   learner_created: false
-feedback_link: https://hyperskill.org/learn/step/5919#comment
+feedback_link: https://hyperskill.org/learn/step/6943#comment
 status: Solved
 feedback:
   message: <html>Correct solution</html>
-  time: Sun, 07 Feb 2021 05:51:47 UTC
+  time: Sun, 14 Feb 2021 00:08:41 UTC
 record: -1
