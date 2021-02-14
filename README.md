@@ -10,7 +10,7 @@
 
 ### c++
 
-- [univ-lecture-c++](./univ-lecture-c++) : 방통대 c++ 프로그래밍 강의 실습 코드
+- [c++-univ-lecture](./c++-univ-lecture) : 방통대 c++ 프로그래밍 강의 실습 코드
 
 ### python
 
@@ -41,7 +41,7 @@
 
 ### html
 
-- [univ-lecture-html](./univ-lecture-html) : 방통대 html 웹 프로그래밍 강의 실습 코드
+- [html-univ-lecture](./html-univ-lecture) : 방통대 html 웹 프로그래밍 강의 실습 코드
 
 ### style
 
