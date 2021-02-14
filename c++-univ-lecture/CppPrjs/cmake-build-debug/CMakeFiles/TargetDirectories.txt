@@ -1,3 +1,0 @@
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/CppPrjs.dir
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/dev/workspace/hello-world-projects/univ-lecture-c++/CppPrjs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
