@@ -21,7 +21,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
         <!-- spring-context와 spring-test를 의존성에 추가합니다.-->
