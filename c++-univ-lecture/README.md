@@ -120,4 +120,72 @@ a[4] = 10;
 
 ### 포인터
 
+다른 변수, 구조체, 객체 등이 저장된 곳을 가리키는 변수
+
+포인터 선언 형식
+`TypeName *ptrVar;`
+
+저장된 곳은 주소 계산 연산자 &을 활용해 알 수 있다.
+
+[예제 소스 보기](./CppPrj/SimplePt/SimplePt.cpp)
+
+#### const 한정어와 포인터
+
+포인터 변수에도 const 한정어를 사용할 수 있다. 다만 사용 위치에 따라 의미가 달라진다. 예를 들어
+
+```c++
+
+int a = 10, b = 20;
+const int *ipt = &a;
+*ipt = 30; // error
+ipt = &b;
+
+```
+
+위와 같은 경우 ipt가 const int에 대한 포인터라는 의미가 되어 ipt가 가리키고 있는 곳의 값을 수정하려는 부분에서 에러가 발생하지만
+
+```c++
+
+int a = 10, b = 20;
+int const *ipt = &a;
+*ipt = 30;
+ipt = &b; // error
+
+```
+
+이 경우는 ipt 자체에 const가 지정되어 ipt의 값을 바꾸려는 부분은 문제 없이 실행되지만 ipt가 가리키는 곳을 바꾸려고 하면 에러가 발생한다.
+
+### 동적 메모리 할당 및 반환
+
+일시적으로 갑자기 많은 메모리를 잡아줘야 하거나, 콜스택 메모리 공간에 영향을 받고 싶지 않거나,크기를 알 수 없는 배열을 저장해야 할 경우 등엔 동적 메모리 할당을 사용하면 유용하다. 이는 new와 delete 키워드를 이용해 공간을 할당받고 반환하는데 이 때 생성된 저장공간은 이름이 없어 이름을 통해 접근할 수 없다. 따라서 이 때 포인터 변수가 유용하게 사용된다.
+
+- 사용 예제 1
+
+```c++
+
+int *intPtr
+intPtr = new int;
+*intPtr = 10;
+
+delete intPtr;
+intPtr = nullptr // 반환된 메모리를 더이상 가리키지 않도록 nullPtr을 입력해준다.
+```
+
+- 사용 예제 2 (배열)
+
+```c++
+
+int *intPtr;
+intPtr = new int[4];
+*intPtr = 10;
+*(intPtr + 1) = 20;
+intPtr[2] = 30;
+
+delete [] intPtr;
+intPtr = nullptr;
+
+```
+
+[예제 소스 보기](./CppPrj/ArrayPtr/ArrayPtr.cpp)
+
 ### 참조
