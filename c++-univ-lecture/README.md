@@ -189,3 +189,17 @@ intPtr = nullptr;
 [예제 소스 보기](./CppPrj/ArrayPtr/ArrayPtr.cpp)
 
 ### 참조
+
+참조는 어떠한 대상을 가리킨다는 점에서 포인터와 유사하다. 그러나 초기화 당시 반드시 어떤 대상을 참조해야 하고 초기화를 통해 지정된 참조 대상을 바꿀 수 없다는 점이 다르다. 이런한 참조형 변수는 `TypeName &refVar = varName` 형태로 선언한다.
+
+C++11에서 참조는 l-value 참조와 r-value 참조로 나뉘는데 l-value 참조의 사용 예제는 아래와 같다.
+
+```c++
+
+int a=10, b=20;
+int &aRef = a;
+cout << aRef << endl;
+aRef = 100;
+aRef = b
+
+```
