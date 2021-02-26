@@ -28,3 +28,7 @@ c++-univ-lecture/CppPrj/.vs/CppPrj/v16/.suo
 *.yaml
 *.html
 *.yaml
+*.html
+*.yaml
+*.storageData
+*.storageRecordIndex
