@@ -109,3 +109,8 @@
 - [action-tutorials](./action-tutorials) : 이고잉님의 github action tutorial 강의 실습 코드
 
 - [gitflow](./gitflow) : 이고잉님의 gitflow model 강의 실습 코드
+
+### Computer Science
+
+- [ubiquitous-computing-univ-lecture](./ubiquitous-computing-univ-lecture) : 방통대 유비쿼터스 컴퓨팅 개론 강의 내용 정리
+- [engineer-information-processing](./engineer-information-processing) : 정보 처리 기사 시험 준비 내용 정리
