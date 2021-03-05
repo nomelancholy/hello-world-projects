@@ -116,3 +116,6 @@
 - [engineer-information-processing](./engineer-information-processing) : 정보 처리 기사 시험 준비 내용 정리
 - [software-engineering-univ-lecture](./software-engineering-univ-lecture) : 방통대 소프트웨어 공학 강의 내용 정리
 - [computer-security-univ-lecture](./computer-security-univ-lecture) : 방통대 컴퓨터 보안 강의 내용 정리
+- [computer-graphics-univ-lecture](./computer-graphics-univ-lecture) : 방통대 컴퓨터 그래픽스 강의 내용 정리
+- [integrated-service-digital-network-univ-lecture](./integrated-service-digital-network-univ-lecture) : 방통대 정보통신망 강의 내용 정리
+- [algorithm-univ-lecture](./algorithm-univ-lecture) : 방통대 알고리즘 강의 내용 정리
