@@ -1,6 +1,10 @@
 type: edu
 custom_name: What's up on the field?
 files:
+- name: tictactoe/tictactoe.py
+  visible: true
+  text: '# write your code here'
+  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -222,13 +226,6 @@ files:
     if __name__ == '__main__':
         TicTacToeTest('tictactoe.tictactoe').run_tests()
   learner_created: false
-- name: tictactoe/tictactoe.py
-  visible: true
-  text: '# write your code here'
-  learner_created: false
 feedback_link: https://hyperskill.org/projects/73/stages/401/implement#comment
 status: Solved
-feedback:
-  message: Congratulations!
-  time: Sat, 13 Feb 2021 01:22:16 UTC
-record: 4
+record: 3
