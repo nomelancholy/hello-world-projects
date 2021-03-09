@@ -119,3 +119,9 @@
 - [computer-graphics-univ-lecture](./computer-graphics-univ-lecture) : 방통대 컴퓨터 그래픽스 강의 내용 정리
 - [integrated-service-digital-network-univ-lecture](./integrated-service-digital-network-univ-lecture) : 방통대 정보통신망 강의 내용 정리
 - [algorithm-univ-lecture](./algorithm-univ-lecture) : 방통대 알고리즘 강의 내용 정리
+- [operation-system-univ-lecture](./operation-system-univ-lecture) : 방통대 운영체제 강의 내용 정리
+- [database-system-univ-lecture](./database-system-univ-lecture) : 방통대 데이터베이스 시스템 강의 내용 정리
+- [data-structure-univ-lecture](./data-structure-univ-lecture) : 방통대 자료구조 강의 내용 정리
+- [programming-linguistics-univ-lecture](./programming-linguistics-univ-lecture) : 방통대 프로그래밍 언어론 강의 내용 정리
+- [computer-introduction-univ-lecture](./computer-introduction-univ-lecture) : 방통대 컴퓨터의 이해 강의 내용 정리
+- [computer-science-introduction-univ-lecture](./computer-science-introduction-) : 방통대 컴퓨터 과학 개론 강의 내용 정리

@@ -32,3 +32,8 @@ c++-univ-lecture/CppPrj/.vs/CppPrj/v16/.suo
 *.yaml
 *.storageData
 *.storageRecordIndex
+*.lib
+*.dll
+*.xml
+*.exe
+computer-graphics-univ-lecture/Practice/packages
