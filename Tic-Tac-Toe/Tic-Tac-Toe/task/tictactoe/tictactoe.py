@@ -16,7 +16,6 @@ def is_sequential(cells):
 
 
 def who_won(cells):
-
     x_won = False
     y_won = False
     blank_cell = 0
@@ -85,11 +84,11 @@ def who_won(cells):
 
 user_input = input("> ")
 
-print("Enter Cells: "+user_input)
+print("Enter Cells: " + user_input)
 print("---------")
-print("| "+user_input[0]+" "+user_input[1]+" "+user_input[2]+" |")
-print("| "+user_input[3]+" "+user_input[4]+" "+user_input[5]+" |")
-print("| "+user_input[6]+" "+user_input[7]+" "+user_input[8]+" |")
+print("| " + user_input[0] + " " + user_input[1] + " " + user_input[2] + " |")
+print("| " + user_input[3] + " " + user_input[4] + " " + user_input[5] + " |")
+print("| " + user_input[6] + " " + user_input[7] + " " + user_input[8] + " |")
 print("---------")
 
 if not is_sequential(user_input):
@@ -97,3 +96,18 @@ if not is_sequential(user_input):
 else:
     result = who_won(user_input)
     print(result)
+
+
+def is_valid_coordinates(coordinates):
+    is_valid = "True"
+
+    for coordinate in coordinates:
+        if type(coordinate) is not int:
+            is_valid = "You Should enter numbers!"
+
+    return is_valid
+
+
+print("Enter the coordinates:")
+
+is_valid_coordinates(input().split())
