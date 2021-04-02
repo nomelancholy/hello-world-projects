@@ -38,3 +38,9 @@ c++-univ-lecture/CppPrj/.vs/CppPrj/v16/.suo
 *.exe
 computer-graphics-univ-lecture/Practice/packages
 computer-graphics-univ-lecture/Practice/.vs/Practice/v16/.suo
+*.pyc
+*.cfg
+python-jetbrains-academy-for-beginners/Simple Chatty Bot/.idea/VirtualEnvironment/Lib/site-packages/setuptools-47.1.0.dist-info/INSTALLER
+python-jetbrains-academy-for-beginners/Simple Chatty Bot/.idea/VirtualEnvironment/Lib/site-packages/setuptools-47.1.0.dist-info/LICENSE
+python-jetbrains-academy-for-beginners/Simple Chatty Bot/.idea/VirtualEnvironment/Lib/site-packages/setuptools-47.1.0.dist-info/METADATA
+*.iml
