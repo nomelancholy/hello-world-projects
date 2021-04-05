@@ -22,14 +22,7 @@ spring-layered-architecture-example/spring-layered-architecture-example/target/s
 *.filters
 *.user
 c++-univ-lecture/CppPrj/.vs/CppPrj/v16/.suo
-*.yaml
-*.yaml
 *.sln
-*.yaml
-*.html
-*.yaml
-*.html
-*.yaml
 *.storageData
 *.storageRecordIndex
 *.lib
