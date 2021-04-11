@@ -7,5 +7,5 @@ files:
     coin = bool(int(input()))  # don't modify this line, please
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7076#comment
-status: Unchecked
+status: Solved
 record: -1

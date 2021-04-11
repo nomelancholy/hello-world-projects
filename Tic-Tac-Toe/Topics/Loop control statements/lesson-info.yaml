@@ -1,5 +1,7 @@
+custom_name: Loop control statements
 content:
-- Theory
-- Palindrome
-- Prime number
-- Count up the squares
+  - Theory
+  - Palindrome
+  - Prime number
+  - Count up the squares
+  - Process integer input
