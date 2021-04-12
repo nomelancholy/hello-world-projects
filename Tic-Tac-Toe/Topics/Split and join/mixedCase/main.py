@@ -1,8 +1,13 @@
-text = input()
-text = text.capitalize()
+text = input().title()
 
-answer = [t for t in text if t.isupper() == ]
+answer = []
 
-answer = "".join(answer)
+for idx in range(len(text)):
+    if idx == 0:
+        answer.append(text[idx].lower())
+    elif text[idx] == " ":
+        continue
+    else:
+        answer.append(text[idx])
 
-print(answer)
+print("".join(answer))

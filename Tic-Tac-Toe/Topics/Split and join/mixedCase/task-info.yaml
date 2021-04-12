@@ -4,19 +4,8 @@ files:
   visible: true
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9465#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed test #1 of 5. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    camel
-    Correct output:
-    camel
-
-    Your code output:
-    C
-  time: Mon, 12 Apr 2021 14:51:49 UTC
+  message: <html>Correct solution</html>
+  time: Mon, 12 Apr 2021 15:20:32 UTC
 record: -1
