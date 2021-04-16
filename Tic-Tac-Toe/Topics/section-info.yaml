@@ -1,7 +1,8 @@
 content:
-  - Split and join
-  - While loop
-  - If statement
-  - Loop control statements
-  - Else statement
-  - Program with numbers
+- Split and join
+- While loop
+- If statement
+- Loop control statements
+- Else statement
+- Program with numbers
+- List comprehension
