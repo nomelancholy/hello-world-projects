@@ -2,4 +2,7 @@ type: code
 custom_name: val or var?
 feedback_link: https://hyperskill.org/learn/step/7307#comment
 status: Unchecked
+feedback:
+  message: Failed to post solution to JetBrains Academy
+  time: Thu, 10 Jun 2021 06:21:09 UTC
 record: -1
