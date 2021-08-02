@@ -6,10 +6,16 @@ import { NaverMap, Marker, RenderAfterNavermapsLoaded } from "react-naver-maps";
 export default function Home() {
   const key = process.env.api_key;
 
+  export async function getServerSideProps(context) {
+    return {
+      props: {}, // will be passed to the page component as props
+    };
+  }
+
   return (
     <div className={styles.container}>
       {" "}
-      <RenderAfterNavermapsLoaded
+      {/* <RenderAfterNavermapsLoaded
         clientId={key}
         error={<p>err</p>}
         loading={<p>loading</p>}
@@ -18,7 +24,7 @@ export default function Home() {
           id="react-naver-maps"
           styles={{ width: "100%", heigt: "100vh" }}
         />
-      </RenderAfterNavermapsLoaded>
+      </RenderAfterNavermapsLoaded> */}
     </div>
   );
 }
