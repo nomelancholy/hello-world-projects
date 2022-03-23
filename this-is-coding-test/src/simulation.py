@@ -1,3 +1,4 @@
+# 118p 게임 개발
 def game_development(size, now, game_map):
 
     n, m = size
@@ -55,3 +56,20 @@ def game_development(size, now, game_map):
                 break
     
     return count
+
+def string_rearrangement(s):
+    
+    
+    number = []
+    string = ''
+    
+    for c in s:
+        if c.isdigit():
+            number.append(int(c))
+        else:
+            string += c
+            
+    string = "".join(sorted(string))
+    answer = string + str(sum(number))
+    
+    return answer

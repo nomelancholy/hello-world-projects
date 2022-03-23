@@ -1,4 +1,4 @@
-from simulation import game_development
+from simulation import game_development, string_rearrangement
 
-result = game_development([4, 4], [1, 1, 0], [[1, 1, 1, 1], [1, 0, 0, 1], [1, 1, 0, 1], [1, 1, 1, 1]])
+result = string_rearrangement('AJKDLSI412K4JSJ9D')
 print(result)
