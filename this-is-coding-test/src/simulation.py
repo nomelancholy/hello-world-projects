@@ -1,7 +1,7 @@
+import itertools
+from turtle import distance
+
 # 118p 게임 개발
-from ast import Continue
-
-
 def game_development(size, now, game_map):
 
     n, m = size
@@ -149,3 +149,43 @@ def dummy(n, k, apples, turn_count, turn_info):
             turn_info.pop()
         
     return time
+
+def chicken_delivery():
+    n, m = input().split()
+    n, m = int(n), int(m)
+
+    # 좌표 저장    
+    homes = []
+    chicken_stores = []
+
+    # 좌표 받으면서 치킨집, 집  좌표를 따로 저장하고
+    # 그걸로 m개 짜리 순열을 만든다
+    for x in range(n):
+        line = list(map(int, input().split()))
+        for y in range(n):
+            if line[y] == 1:
+                homes.append([x, y])
+            elif line[y] == 2:
+                chicken_stores.append([x, y])
+        
+    possibles = list(itertools.combinations(chicken_stores, m))
+    answer = 51 * 51
+    alls = []
+
+    # 경우의 수를 전부 확인하는데
+    for group in possibles:
+        distances = []
+    # 집을 기준으로
+        for r1, c1 in homes:   
+            store_distance = []
+            # 가게와의 거리를 다 확인하고
+            for r2, c2 in group:
+                store_distance.append(abs(r1 - r2) + abs(c1 - c2))
+            #가장 작은 걸 그 집의 치킨 거리로 하고
+            distances.append(min(store_distance))
+        # 집마다 구한 치킨 거리를 더해서 경우의 수로 놓는다.
+        alls.append(sum(distances))
+
+    answer = min(alls)
+    
+    return answer
