@@ -1,4 +1,7 @@
 from collections import deque
+from itertools import combinations
+import sys
+sys.setrecursionlimit(10**6)
 
 def ice_drink():
     
@@ -106,25 +109,26 @@ def search_particular_city():
     graph = [[]for _ in range(n + 1)]
     visited = [False] * (n + 1)
     distances = [-1] * (n + 1)
-    
+
     # 그래프 구성
     for _ in range(m):
         a, b = map(int, input().split())
         graph[a].append(b)
-    
+
     # 큐 생성
     q = deque([x])
     distances[x] = 0
-    
+
+    # bfs
     while q:
-        now = q.popleft()
-        
+        now = q.popleft()        
         for i in graph[now]: 
             if not visited[i]:
                 visited[i] = True    
                 distances[i] = distances[now] + 1 
                 q.append(i)
-                
+
+    # 답 필터링
     answers = [i for i, v in enumerate(distances) if v == k]
 
     if not answers:
@@ -134,3 +138,71 @@ def search_particular_city():
             print(a)
             
     return -1
+
+def lab():
+    n, m = map(int, input().split())
+    
+    arr = []
+
+    for _ in range(n):
+        line = list(map(int, input().split()))
+        arr.append(line)
+
+    tarr = [[0] * m for _ in range(n)]
+    
+    # 바이러스가 퍼질 수 있는 방향 정의
+    dx = [0, 1, 0, -1]
+    dy = [-1, 0, 1, 0]
+    
+    answer = 0   
+
+    def virus(x, y):
+        for i in range(len(dx)):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            
+            # 연구실을 벗어나지 않고, 0인 경우에만
+            if 0 <= nx < n and  0 <= ny < m:
+                if tarr[nx][ny] == 0:
+                    tarr[ny][ny] = 2
+                    virus(nx, ny)
+
+    def get_score():
+        score = 0
+        for i in range(n):
+            for j in range(m):
+                if tarr[i][j] == 0:
+                    score += 1
+        return score
+
+    def dfs(count):
+        global answer
+        
+        # 벽 3개 설치가 끝나면
+        if count == 3:
+            # 복사
+            for i in range(n):
+                for j in range(m):
+                    tarr[i][j] = arr[i][j]
+            
+            # 바이러스 전파  
+            for i in range(n):
+                for j in range(m):
+                    if tarr[i][j] == 2:
+                        virus(i , j)
+                        
+            answer = max(answer, get_score())
+            return
+        
+        for i in range(n):
+            for j in range(m):
+                if arr[i][j] == 0:
+                    arr[i][j] = 1
+                    count += 1
+                    dfs(count)
+                    arr[i][j] = 0
+                    count -= 1
+
+    dfs(0)
+        
+    return answer
