@@ -1,4 +1,4 @@
-from collections import deque
+from collections import deque, defaultdict
 from itertools import combinations
 import sys
 sys.setrecursionlimit(10**6)
@@ -141,7 +141,7 @@ def search_particular_city():
 
 def lab():
     n, m = map(int, input().split())
-    
+
     arr = []
 
     for _ in range(n):
@@ -149,11 +149,11 @@ def lab():
         arr.append(line)
 
     tarr = [[0] * m for _ in range(n)]
-    
+
     # 바이러스가 퍼질 수 있는 방향 정의
     dx = [0, 1, 0, -1]
     dy = [-1, 0, 1, 0]
-    
+
     answer = 0   
 
     def virus(x, y):
@@ -205,4 +205,52 @@ def lab():
 
     dfs(0)
         
+    return answer
+
+def competitive_transmission():
+    
+    n, k = map(int, input().split())
+
+    arr = []
+    
+    virus_infos = []
+
+    # 위 오른쪽 아래 왼쪽 (검사 방향) 
+    dx = [0, 1, 0, -1]
+    dy = [-1, 0, 1, 0]
+
+    for i in range(n):
+        # 일단 구성은 하는데
+        line = list(map(int, input().split()))
+        arr.append(line)
+        # 바이러스가 있는 곳 좌표 추가
+        for j in range(n):
+            if line[j] != 0:
+                virus_infos.append([line[j], 0, i, j])
+
+    virus_infos.sort()
+    q = deque(virus_infos)
+
+    s, x, y = map(int, input().split())
+
+    # 시간이 될 때 까지
+    
+    # 키 순서대로 전염
+    while q:
+        virus_kind, sec, vx, vy = q.popleft()
+        
+        if sec == s:
+            break
+        
+        # 4 방향 모두 확인
+        for i in range(4):
+            nx = vx + dx[i]
+            ny = vy + dy[i]
+            # 전염 시킬 수 있는 곳이면
+            if 0 <= nx < n and 0 <= ny < n and arr[nx][ny] == 0:
+                arr[nx][ny] = virus_kind
+                q.append([virus_kind, sec + 1, nx, ny])
+    
+    answer = arr[x - 1][y - 1]
+    
     return answer
