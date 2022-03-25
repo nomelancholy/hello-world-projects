@@ -53,3 +53,47 @@ def ice_drink():
             count += 1
     
     return count
+
+def escape_maze():
+    
+    n, m = map(int, input().split())
+    
+    graph = []
+    
+    visited = [[False] * n for _ in range(m)]
+    
+    for _ in range(n):
+        graph.append(list(map(int, list(input()))))
+        
+    # 1, 1 에서 시작
+    q = deque()
+    q.append([0, 0])
+    visited[0][0] = True
+    
+    # 위 오른쪽 아래 왼쪽 (검사 방향) 
+    dx = [0, 1, 0, -1]
+    dy = [-1, 0, 1, 0]
+    
+    answer = 0
+
+    # 무한 반복하는데
+    while True:
+        x, y = q.popleft()
+        # 목표 지점 도달 
+        if x == n - 1 and y == m - 1:
+            answer = graph[x][y]
+            break
+        # 4방향 확인
+        for i in range(len(dx)):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if not (0 <= nx < n) or not (0 <= ny < m):
+                continue
+            if graph[nx][ny] == 0:
+                continue
+            if graph[nx][ny] == 1:
+                q.append([nx, ny])
+                graph[nx][ny] += graph[x][y]
+                
+    
+    return answer
