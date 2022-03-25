@@ -81,6 +81,7 @@ def escape_maze():
         x, y = q.popleft()
         # 목표 지점 도달 
         if x == n - 1 and y == m - 1:
+            # 값 출력
             answer = graph[x][y]
             break
         # 4방향 확인
@@ -91,9 +92,45 @@ def escape_maze():
                 continue
             if graph[nx][ny] == 0:
                 continue
+            # 처음 오는 곳이면 이전 값을 그 곳에 더한다
             if graph[nx][ny] == 1:
                 q.append([nx, ny])
                 graph[nx][ny] += graph[x][y]
                 
     
     return answer
+
+def search_particular_city():
+    n, m, k, x = map(int, input().split())
+
+    graph = [[]for _ in range(n + 1)]
+    visited = [False] * (n + 1)
+    distances = [-1] * (n + 1)
+    
+    # 그래프 구성
+    for _ in range(m):
+        a, b = map(int, input().split())
+        graph[a].append(b)
+    
+    # 큐 생성
+    q = deque([x])
+    distances[x] = 0
+    
+    while q:
+        now = q.popleft()
+        
+        for i in graph[now]: 
+            if not visited[i]:
+                visited[i] = True    
+                distances[i] = distances[now] + 1 
+                q.append(i)
+                
+    answers = [i for i, v in enumerate(distances) if v == k]
+
+    if not answers:
+        print(-1)
+    else:
+        for a in answers:
+            print(a)
+            
+    return -1
