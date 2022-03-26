@@ -1,88 +1,92 @@
 from collections import deque, defaultdict
-from itertools import combinations
+from itertools import combinations, permutations
 import sys
+
+from pydantic import EnumMemberError
 sys.setrecursionlimit(10**6)
 
+
 def ice_drink():
-    
+
     n, m = map(int, input().split())
-    
+
     # 틀
     cast = []
-    
+
     # 만들 수 있는 갯수
     count = 0
-    
-    # 위 오른쪽 아래 왼쪽 (검사 방향) 
+
+    # 위 오른쪽 아래 왼쪽 (검사 방향)
     dx = [0, 1, 0, -1]
     dy = [-1, 0, 1, 0]
-    
+
     # 틀 제작 완료
     for _ in range(n):
         cast.append(list(map(int, list(input()))))
-    
-    # 방문 여부 체크 완료    
+
+    # 방문 여부 체크 완료
     visited = [[False] * m for _ in range(n)]
-    
+
     for i, line in enumerate(cast):
         for j, grid in enumerate(line):
             # 틀이거나 방문한 곳이면 건너 뛰고
-            if grid == 1  or visited[i][j] == True:
+            if grid == 1 or visited[i][j] == True:
                 continue
             # 아니면 방문 처리
             visited[i][j] = True
-            
+
             # 0인 부분의 좌표를 큐에 넣고
             q = deque([[i, j]])
-            
+
             # 큐가 빌 때 까지
             while q:
                 # 하나 빼서
                 x, y = q.popleft()
-                
+
                 # 사방을 보면서
                 for k in range(len(dx)):
                     nx = x + dx[k]
                     ny = y + dy[k]
-                    
+
                     # 틀을 벗어나거나 홈이 없는 곳이거나 방문한 곳이면 건너뛰고
                     if nx < 0 or nx >= n or ny < 0 or ny >= m or cast[nx][ny] == 1 or visited[nx][ny]:
                         continue
                     # 아니면 큐에 넣는다
                     q.append([nx, ny])
                     visited[nx][ny] = True
-            
+
             # 과정을 다 거치고 나오면 그룹 하나 형성
             count += 1
-    
+
     return count
 
+
 def escape_maze():
-    
+
     n, m = map(int, input().split())
-    
+
     graph = []
-    
+
     visited = [[False] * n for _ in range(m)]
-    
+
     for _ in range(n):
         graph.append(list(map(int, list(input()))))
-        
+
     # 1, 1 에서 시작
     q = deque()
     q.append([0, 0])
     visited[0][0] = True
-    
-    # 위 오른쪽 아래 왼쪽 (검사 방향) 
+
+    # 위 오른쪽 아래 왼쪽 (검사 방향)
     dx = [0, 1, 0, -1]
     dy = [-1, 0, 1, 0]
-    
+
     answer = 0
 
     # 무한 반복하는데
     while True:
         x, y = q.popleft()
-        # 목표 지점 도달 
+        # 목표 지점 도달
         if x == n - 1 and y == m - 1:
             # 값 출력
             answer = graph[x][y]
@@ -99,9 +103,9 @@ def escape_maze():
             if graph[nx][ny] == 1:
                 q.append([nx, ny])
                 graph[nx][ny] += graph[x][y]
-                
-    
+
     return answer
+
 
 def search_particular_city():
     n, m, k, x = map(int, input().split())
@@ -121,11 +125,11 @@ def search_particular_city():
 
     # bfs
     while q:
-        now = q.popleft()        
-        for i in graph[now]: 
+        now = q.popleft()
+        for i in graph[now]:
             if not visited[i]:
-                visited[i] = True    
-                distances[i] = distances[now] + 1 
+                visited[i] = True
+                distances[i] = distances[now] + 1
                 q.append(i)
 
     # 답 필터링
@@ -136,8 +140,9 @@ def search_particular_city():
     else:
         for a in answers:
             print(a)
-            
+
     return -1
+
 
 def lab():
     n, m = map(int, input().split())
@@ -154,15 +159,15 @@ def lab():
     dx = [0, 1, 0, -1]
     dy = [-1, 0, 1, 0]
 
-    answer = 0   
+    answer = 0
 
     def virus(x, y):
         for i in range(len(dx)):
             nx = x + dx[i]
             ny = y + dy[i]
-            
+
             # 연구실을 벗어나지 않고, 0인 경우에만
-            if 0 <= nx < n and  0 <= ny < m:
+            if 0 <= nx < n and 0 <= ny < m:
                 if tarr[nx][ny] == 0:
                     tarr[ny][ny] = 2
                     virus(nx, ny)
@@ -177,23 +182,23 @@ def lab():
 
     def dfs(count):
         global answer
-        
+
         # 벽 3개 설치가 끝나면
         if count == 3:
             # 복사
             for i in range(n):
                 for j in range(m):
                     tarr[i][j] = arr[i][j]
-            
-            # 바이러스 전파  
+
+            # 바이러스 전파
             for i in range(n):
                 for j in range(m):
                     if tarr[i][j] == 2:
-                        virus(i , j)
-                        
+                        virus(i, j)
+
             answer = max(answer, get_score())
             return
-        
+
         for i in range(n):
             for j in range(m):
                 if arr[i][j] == 0:
@@ -204,18 +209,19 @@ def lab():
                     count -= 1
 
     dfs(0)
-        
+
     return answer
 
+
 def competitive_transmission():
-    
+
     n, k = map(int, input().split())
 
     arr = []
-    
+
     virus_infos = []
 
-    # 위 오른쪽 아래 왼쪽 (검사 방향) 
+    # 위 오른쪽 아래 왼쪽 (검사 방향)
     dx = [0, 1, 0, -1]
     dy = [-1, 0, 1, 0]
 
@@ -234,14 +240,14 @@ def competitive_transmission():
     s, x, y = map(int, input().split())
 
     # 시간이 될 때 까지
-    
+
     # 키 순서대로 전염
     while q:
         virus_kind, sec, vx, vy = q.popleft()
-        
+
         if sec == s:
             break
-        
+
         # 4 방향 모두 확인
         for i in range(4):
             nx = vx + dx[i]
@@ -250,7 +256,49 @@ def competitive_transmission():
             if 0 <= nx < n and 0 <= ny < n and arr[nx][ny] == 0:
                 arr[nx][ny] = virus_kind
                 q.append([virus_kind, sec + 1, nx, ny])
-    
+
     answer = arr[x - 1][y - 1]
-    
+
     return answer
+
+
+def operator_insert():
+
+    global min_val, max_val, plus, minus, multi, div, n
+    n = int(input())
+
+    numbers = list(map(int, input().split()))
+
+    plus, minus, multi, div = map(int, input().split())
+
+    min_val = 1e9
+    max_val = -1e9
+
+    def get_value(index, now_val):
+        global min_val, max_val, plus, minus, multi, div, n
+
+        if index == n:
+            min_val = min(now_val, min_val)
+            max_val = max(now_val, max_val)
+        else:
+            if plus > 0:
+                plus -= 1
+                get_value(index + 1, now_val + numbers[index])
+                plus += 1
+            if minus > 0:
+                minus -= 1
+                get_value(index + 1, now_val - numbers[index])
+                minus += 1
+            if multi > 0:
+                multi -= 1
+                get_value(index + 1, now_val * numbers[index])
+                multi += 1
+            if div > 0:
+                div -= 1
+                get_value(index + 1, now_val / numbers[index])
+                div += 1
+
+    get_value(1, numbers[0])
+    print(min_val, max_val)
+
+    return 0
