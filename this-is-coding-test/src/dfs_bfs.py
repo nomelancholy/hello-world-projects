@@ -299,3 +299,90 @@ def operator_insert():
     print(min_value)
 
     return 0
+
+def avoid_watch():
+
+    global answer, teacher_spaces
+    answer = False
+
+    n = int(input())
+
+    arr = []
+
+    empty_spaces = []
+    teacher_spaces = []
+    student_spaces = []
+
+    dx = [0, 1, 0, -1]
+    dy = [-1, 0, 1, 0]
+
+    # 입력 받으면서
+    for i in range(n):
+        line = input().split()
+        arr.append(line)
+        for j in range(n):
+            if line[j] == 'X':
+                empty_spaces.append([i, j])
+            elif line[j] == 'T':
+                teacher_spaces.append([i, j])
+            elif line[j] == 'S':
+                student_spaces.append([i, j])
+        
+
+    # 장애물 설치 후보지 조합
+    candidates = list(combinations(empty_spaces, 3))
+
+    # 선생님 입장에서 학생 보이는지 확인    
+    def isTeacherSeeStudent(arr):
+        global teacher_spaces
+        
+        # 선생님마다
+        for t in teacher_spaces:
+            # 큐 생성
+            q = deque([t])
+            
+            # 4방향으로 각자 직진하면서 검사
+            for i in range(4):
+                while q:
+                    tx, ty = q.popleft()
+                    
+                    nx = tx + dx[i]
+                    ny = ty + dy[i]   
+                                        
+                    # 범위 내일 경우 진행
+                    if 0 <= nx < n and 0 <= ny < n:
+                        # 학생이면 보이는 거고
+                        if arr[nx][ny] == 'S':
+                            return True
+                        # 빈칸이면 한칸 더 확인
+                        elif arr[nx][ny] == 'X':
+                            q.append((nx, ny))         
+        
+        # 큐를 다 돌아도 없다면 감시를 모두 피한거다
+        return False
+
+    # 장애물 설치
+    def install_obstacle(arr, candidate):
+        global answer
+        # 세군데 설치
+        for x, y in candidate:
+            arr[x][y] = 'O'
+        
+        # 모두가 감시를 피했으면
+        if not isTeacherSeeStudent(arr):
+            # 정답 찾았다
+            answer = True
+            
+    for candidate in candidates:
+        # 정답을 못찾은 경우
+        if not answer:
+            install_obstacle(arr, candidate)
+        else:
+            break
+        
+    if answer:
+        print('YES')
+    else:
+        print('NO')
+    
+    return answer
