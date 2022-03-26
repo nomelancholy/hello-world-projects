@@ -2,7 +2,6 @@ from collections import deque, defaultdict
 from itertools import combinations, permutations
 import sys
 
-from pydantic import EnumMemberError
 sys.setrecursionlimit(10**6)
 
 
@@ -263,42 +262,40 @@ def competitive_transmission():
 
 
 def operator_insert():
-
-    global min_val, max_val, plus, minus, multi, div, n
+    global data, add, minus, mul, div, n, min_value, max_value
     n = int(input())
+    data = list(map(int, input().split()))
+    add, minus, mul, div  = map(int, input().split())
 
-    numbers = list(map(int, input().split()))
+    min_value = 1e9
+    max_value = -1e9
 
-    plus, minus, multi, div = map(int, input().split())
-
-    min_val = 1e9
-    max_val = -1e9
-
-    def get_value(index, now_val):
-        global min_val, max_val, plus, minus, multi, div, n
-
-        if index == n:
-            min_val = min(now_val, min_val)
-            max_val = max(now_val, max_val)
+    def dfs(i, now):
+        global data, add, minus, mul, div, n, min_value, max_value
+        
+        if i == n:
+            min_value = min(min_value, now)
+            max_value = max(max_value, now)
         else:
-            if plus > 0:
-                plus -= 1
-                get_value(index + 1, now_val + numbers[index])
-                plus += 1
+            if add > 0:
+                add -= 1
+                dfs(i+1, now + data[i])
+                add += 1
             if minus > 0:
                 minus -= 1
-                get_value(index + 1, now_val - numbers[index])
+                dfs(i+1, now - data[i])
                 minus += 1
-            if multi > 0:
-                multi -= 1
-                get_value(index + 1, now_val * numbers[index])
-                multi += 1
+            if mul > 0:
+                mul -= 1
+                dfs(i+1, now * data[i])
+                mul += 1
             if div > 0:
                 div -= 1
-                get_value(index + 1, now_val / numbers[index])
+                dfs(i+1, int(now / data[i]))
                 div += 1
-
-    get_value(1, numbers[0])
-    print(min_val, max_val)
+                
+    dfs(1, data[0])
+    print(max_value)
+    print(min_value)
 
     return 0
