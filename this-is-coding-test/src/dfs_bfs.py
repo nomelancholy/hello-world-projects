@@ -374,7 +374,7 @@ def avoid_watch():
             answer = True
             
     for candidate in candidates:
-        # 정답을 못찾은 경우
+        # 정답을 못찾은 경우 추가 설치
         if not answer:
             install_obstacle(arr, candidate)
         else:
@@ -386,3 +386,62 @@ def avoid_watch():
         print('NO')
     
     return answer
+
+def population_migration():
+    global n, lands, candidates
+    n, l, r =map(int, input().split())
+    
+    lands = []
+    day = 0
+    
+    # 인구 수 입력
+    for _ in range(n):
+        lands.append(list(map(int, input().split())))
+        
+    def isCanUnion():
+        global n, candidates
+            
+        dx = [0, 1, 0, -1]
+        dy = [-1, 0, 1, 0]
+        
+        candidates = set()
+
+        # 연합 형성될 수 있는지 검사하고
+        for x in range(n):
+            for y in range(n):
+                for i in range(4):
+                    nx = x + dx[i]
+                    ny = y + dy[i]             
+            
+                    # 범위 안이면
+                    if 0 <= nx < n and 0 <= ny < y:
+                        diff = abs(lands[x][y] - lands[nx][ny])
+                        if l <= diff <= r:
+                            candidates.add((x, y))
+                            candidates.add((nx, ny))
+        print(day + 1)
+        print(candidates)
+        print(lands)
+        print()
+        if candidates:
+            return True
+        else:
+            return False
+    
+    while True:
+        if isCanUnion():
+            # 인구 이동
+            day += 1
+            sum = 0
+            for cx, cy in candidates:
+                sum += lands[cx][cy]
+            
+            p = int(sum / len(candidates))
+            
+            for cx, cy in candidates:
+                lands[cx][cy] = p
+            
+        else:
+            break
+        
+   #  print(day)
