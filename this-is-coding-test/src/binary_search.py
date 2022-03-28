@@ -1,5 +1,6 @@
 from collections import Counter
 from bisect import bisect_left, bisect_right, bisect
+from turtle import home
 
 def particular_number_count():
     
@@ -44,4 +45,41 @@ def search_fixed_point():
         print(result)
     else:
         print(-1)
+        
+def router_install():
     
+    n, c = map(int, input().split())
+
+    homes = []
+    
+    for _ in range(n):
+        homes.append(int(input()))
+
+    homes.sort()
+    
+    min_gap = 1
+    max_gap = homes[-1] - homes[0]
+    
+    answer = 0
+
+    while (min_gap <= max_gap):
+        closest_gap = (min_gap + max_gap) // 2
+        # 첫번째 집에는 일단 설치
+        now = homes[0]
+        count = 1
+        
+        # 두번째 집부터 순회
+        for i in range(1, n):
+            # 이전 집의 거리 + 격차보다 그 집의 거리가 멀면
+            if homes[i] >= now + closest_gap:
+                # 설치
+                now = homes[i]
+                count += 1
+                
+            if count >= c:
+                min_gap = now + 1
+                answer = now
+            else:
+                max_gap = now - 1
+    
+    print(answer)
