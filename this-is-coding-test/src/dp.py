@@ -47,3 +47,18 @@ def ant_warrior():
         
     print(d[n - 1])
     
+def floor_work():
+    n = int(input())
+    # 메모를 만들고
+    d = [0] * (n + 1)
+    
+    # 하나일 때 가능한 경우의 수 기록
+    d[1] = 1
+    # 두개일 때 가능한 경우의 수 기록
+    d[2] = 3
+    
+    # 그 이후로는 i-1 일때의 경우의 수에 d[i-2]일 때 경우의 수 * 2가 i번째 경우의 수
+    for i in range(3, n + 1):
+        d[i] = d[i - 1] + 2 * d[i -2] % 796796
+        
+    print(d[n])
