@@ -87,3 +87,51 @@ def monetary_structure():
         print(-1)
     else:
         print(d[m])
+    
+def gold_mine():
+    
+    t = int(input())
+    
+    # 테스트 케이스 돈다
+    for _ in range(t):
+        n, m = map(int, input().split())
+        
+        # 금광 구성
+        gold_mine = [[0] * n for _ in range(m)]
+        
+        golds = list(map(int, input().split()))
+        
+        for i in range(n * m):
+            v, r = divmod(i, m)
+            gold_mine[r][v] = golds[i]
+            
+        print(gold_mine)
+        # 그 칸에 도달했을 때 얻을 수 있는 금의 최대량 기록 배열
+        max_value = [[0] * n for _ in range(m)]
+        
+        # 첫째 칸은 각 값 기록
+        for i in range(n):
+            max_value[0][i] = gold_mine[0][i]
+        
+        dy = [-1, 0, 1]
+        
+        # 두번 째 칸 부터는
+        for i in range(0, m - 1):
+            # 각 칸에서
+            for j in range(n):
+                # 이동 가능한 방향을 구하고
+                for k in dy:
+                    ny = j + k
+                    # 그게 범위 내이면
+                    if 0 <= ny < n:
+                        # 그 칸에 이미 기록되어 있던 값과 이동해온 값 사이의 합 중 큰 값을 기록한다
+                        max_value[i + 1][ny] = max(max_value[i + 1][ny], max_value[i][j] + gold_mine[i  + 1][ny])
+                        
+        print(max_value)
+        print(max(max_value[len(max_value) - 1]))
+        
+        # for i in range(m):
+            
+            
+    
+    print(1)
