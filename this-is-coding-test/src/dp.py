@@ -73,31 +73,17 @@ def monetary_structure():
         
     # 최소한의 화폐 갯수
     
-    d = [0] * (max(max(monetaries), m) + 1)
+    d = [10001] * (m + 1)
     
-    # 화폐를 한장씩만 썼을 때 최소 갯수 (당연히 한장) 기록 
+    d[0] = 0
+    
+    # 화폐 별로 가즈아
     for monetary in monetaries:
-        d[monetary] = 1
-    
-    # 가장 작은 단위 화폐부터 만들고자 하는 숫자까지 반복 시작 (어차피 그 이하는 만들 수 없음)
-    for i in range(min(monetaries), m + 1):
-        
-        for monetary in monetaries:
-            if monetary > i:
-                continue
-            # 아직 기록된 적 없는 값이면
-            if d[i] == 0:
-                # 그 화폐만큼 뺐을 때의 값이 기록되어 있다면
-                if d[i - monetary] != 0:
-                    # 한장 추가
-                    d[i] = d[i - monetary] + 1
-            # 기록된 적 있고
-            else:
-                # 한장 뺐을 때의 값도 기록되어 있다면
-                if d[i - monetary] != 0:
-                    d[i] = min(d[i], d[i - monetary] + 1)
+        for j in range(monetary, m + 1):
+            if d[j - monetary] != 10001:
+                d[j] = min(d[j], d[j - monetary] + 1)
 
-    if d[m] == 0:
+    if d[m] == 10001:
         print(-1)
     else:
         print(d[m])
