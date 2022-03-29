@@ -236,30 +236,21 @@ def editing_distance():
     a = input()
     b = input()
     
-    # 둘 중 긴 글자를 기준으로 반복문을 돈다
-    standard = max(len(a), len(b))
+    n = len(a)
+    m = len(b)
     
-    d = [0] * (standard + 1)
+    d = [[0] * (m + 1) for _ in range(n + 1)]
     
-    for i in range(standard):
-        # 두 글자가 다르면
-        if a[i] != b[i]:
-            # 길이를 보자
-            if len(a) == len(b):
-                a = a[:i] + b[i] + a[i + 1:]
-            elif len(a) < len(b):
-                a = a[:i] + b[i] + a[i:]
-            elif len(a) > len(b):
-                a = a[:i] + a[i + 1:]
-                
-            if d[i + 1] == 0:
-                d[i + 1] =  d[i] + 1
+    for i in range(1, n + 1):
+        d[i][0] = i
+    for j in range(1, m + 1):
+        d[0][j] = j
+        
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            if a[i - 1] == b[j - 1]:
+                d[i][j] = d[i - 1][j - 1]
             else:
-                d[i + 1] = min(d[i + 1], d[i] + 1)
-            
-        # 두 글자가 같으면
-        else:
-            # 이전 변경 횟수와 같다
-            d[i + 1] = d[i]
-            
-    print(d[standard - 1])
+                d[i][j] = 1 + min(d[i][j - 1], d[i - 1][j], d[i - 1][j - 1])
+    
+    print(d[n][m])                
