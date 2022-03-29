@@ -154,3 +154,36 @@ def int_triangle():
             
     print(max(memo[len(memo) - 1]))            
         
+def resignation():
+    
+    n = int(input())
+
+    # 일정
+    t_arr = []
+    # 비용
+    p_arr = []
+
+    # 날짜 별 최대 수익 기록 배열
+    d_arr = [0] * (n + 1)
+    # 현재 까지의 최대 금액
+    max_value = 0
+
+    # 입력 받고
+    for _ in range(n):
+        t, p = map(int, input().split())
+        t_arr.append(t)
+        p_arr.append(p)
+
+    # 퇴직전날부터 거꾸로 
+    for i in range(n - 1, -1, -1):
+        day = t_arr[i] + i
+        # 퇴직 이후까지 이어지는 상담은 할 수 업음
+        if day <= n:
+            d_arr[i] = max(p_arr[i] + d_arr[day], max_value)
+            max_value = d_arr[i]
+        # 벗어나는 경우엔
+        else:
+            d_arr[i] = max_value
+        print(i, d_arr)
+        
+    print(max(d_arr))
