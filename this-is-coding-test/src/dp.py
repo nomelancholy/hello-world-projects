@@ -231,3 +231,35 @@ def ugly_number():
             
     print(ugly_numbers)            
     print(list(ugly_numbers)[n - 1])
+    
+def editing_distance():
+    a = input()
+    b = input()
+    
+    # 둘 중 긴 글자를 기준으로 반복문을 돈다
+    standard = max(len(a), len(b))
+    
+    d = [0] * (standard + 1)
+    
+    for i in range(standard):
+        # 두 글자가 다르면
+        if a[i] != b[i]:
+            # 길이를 보자
+            if len(a) == len(b):
+                a = a[:i] + b[i] + a[i + 1:]
+            elif len(a) < len(b):
+                a = a[:i] + b[i] + a[i:]
+            elif len(a) > len(b):
+                a = a[:i] + a[i + 1:]
+                
+            if d[i + 1] == 0:
+                d[i + 1] =  d[i] + 1
+            else:
+                d[i + 1] = min(d[i + 1], d[i] + 1)
+            
+        # 두 글자가 같으면
+        else:
+            # 이전 변경 횟수와 같다
+            d[i + 1] = d[i]
+            
+    print(d[standard - 1])
