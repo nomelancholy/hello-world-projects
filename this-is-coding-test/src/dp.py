@@ -187,3 +187,23 @@ def resignation():
         print(i, d_arr)
         
     print(max(d_arr))
+    
+def soldier_deploy():
+    n = int(input())
+
+    soldiers = list(map(int, input().split()))
+    
+    # 뒤집는다
+    soldiers.reverse()
+    
+    dp = [1] * n
+    
+    for i in range(1, n):
+        for j in range(0, i):
+            print(i, j, soldiers[j], soldiers[i])
+            # j번째 값이 j + 1보다 크면
+            if soldiers[j] < soldiers[i]:
+                dp[i] = max(dp[i], dp[j] + 1)
+                print(dp)
+    
+    print(n - max(dp))
