@@ -1,3 +1,5 @@
+import heapq
+
 def make_to_one():
     
     n = int(input())
@@ -207,3 +209,25 @@ def soldier_deploy():
                 print(dp)
     
     print(n - max(dp))
+
+def ugly_number():
+    
+    n = int(input())
+    
+    ugly_numbers = set()
+    
+    factors = [2, 3, 5]
+    
+    heap = []
+    
+    heapq.heappush(heap, 1)
+    
+    while len(ugly_numbers) != n:
+        top = heapq.heappop(heap)
+        ugly_numbers.add(top)
+        
+        for factor in factors:
+            heapq.heappush(heap, top * factor)
+            
+    print(ugly_numbers)            
+    print(list(ugly_numbers)[n - 1])
