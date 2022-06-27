@@ -20,12 +20,13 @@ const routes = {
     dest: "build",
   },
   img: {
+    watch: "src/img/*",
     src: "src/img/*",
     dest: "build/img",
   },
   scss: {
     watch: "src/scss/**/*.scss",
-    src: "src/scss/style.scss",
+    src: "src/scss/*.scss",
     dest: "build/css",
   },
   js: {
@@ -69,6 +70,7 @@ const js = () =>
     .pipe(gulp.dest(routes.js.dest));
 
 const watch = () => {
+  gulp.watch(routes.img.watch, img);
   gulp.watch(routes.html.watch, html);
   gulp.watch(routes.scss.watch, styles);
   gulp.watch(routes.js.watch, js);
